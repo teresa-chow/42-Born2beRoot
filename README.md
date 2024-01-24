@@ -81,7 +81,7 @@ ___
   </tr>
   <tr>
     <td><strong>Package manager</strong></td>
-    <td>Avanced Package Tool (APT)</td>
+    <td>Advanced Package Tool (APT)</td>
     <td>Dandified YUM / DNF</td>
   </tr>
   <tr>
