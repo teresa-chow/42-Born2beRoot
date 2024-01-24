@@ -5,7 +5,7 @@ _Born2beRoot is a System Administration exercise from 42 School core curriculum.
 ___
 
 <details>
-  <summary><h2>1. Virtual Machine: creation</h2></summary>
+  <summary><h2>Virtual Machine: creation</h2></summary>
 
 > _A Virtual Machine (VM) is a computer file, commonly referred to as an image, that behaves like an actual computer: that is, a virtual computer within a computer._
 
@@ -44,12 +44,12 @@ ___
 
 
 <details>
-  <summary><h2>2. Operating System (Debian): installation</h2></summary>
+  <summary><h2>Operating System (Debian): installation</h2></summary>
 
 </br>
 
 <details>
-  <summary>:bulb: <strong>Debian vs. Rocky Linux</strong></summary>
+  <summary>:bulb: <b>Debian vs. Rocky Linux</b></summary>
 
 </br>
 
@@ -60,42 +60,42 @@ ___
     <th>Rocky Linux</th>
   </tr>
   <tr>
-    <td><strong>Developer</strong></td>
+    <td><b>Developer</b></td>
     <td>The Debian Project</td>
     <td>Rocky Enterprise Software Foundation</td>
   </tr>
   <tr>
-    <td><strong>OS Family</strong></td>
+    <td><b>OS Family</b></td>
     <td>Linux (Unix-like)</td>
     <td>Linux (Unix-like)</td>
   </tr>
   <tr>
-    <td><strong>Source model</strong></td>
+    <td><b>Source model</b></td>
     <td>Open source</td>
     <td>Open source</td>
   </tr>
   <tr>
-    <td><strong>Repository</strong></td>
+    <td><b>Repository</b></td>
     <td><a href = "https://deb.debian.org">deb.debian.org</a></td>
     <td><a href = "https://git.rockylinux.org">git.rockylinux.org</a></td>
   </tr>
   <tr>
-    <td><strong>Package manager</strong></td>
+    <td><b>Package manager</b></td>
     <td>Advanced Package Tool (APT)</td>
     <td>Dandified YUM / DNF</td>
   </tr>
   <tr>
-    <td><strong>Release cycle</strong></td>
+    <td><b>Release cycle</b></td>
     <td>2 years</td>
     <td>1 year</td>
   </tr>
   <tr>
-    <td><strong>Long Term Support (LTS)</strong></td>
+    <td><b>Long Term Support (LTS)</b></td>
     <td>5 years</td>
     <td>10 years</td>
   </tr>
   <tr>
-    <td><strong>Comments</strong></td>
+    <td><b>Comments</b></td>
     <td></td>
     <td>Red Hat Enterprise Linux (RHEL) compatibility</td>
   </tr>
@@ -130,11 +130,17 @@ ___
 
 </details>
 
-<details>
-  <summary><h2>3. VM: setup</h2></summary>
+<details open>
+  <summary><h2>VM: setup</h2></summary>
 
-<h3>3.1. Partitioning the Disk</h3>
-<h4>3.1.1. Create Primary Partition</h4>
+<h3>Partitioning the Disk</h3>
+    <ul><li>Partioning method: <code>Manual</code></li></ul>
+
+</br>
+    
+<h4>Create Primary Partition</h4>
+<blockquote><i>One has to create at least one primary partition on the disk.</i></blockquote>
+
 <h4>3.1.2. Create Logical Partition</h4>
 <h4>3.1.3. Encrypt Volumes</h4>
 <h4>3.1.4. Configure Logical Volume Manager</h4>
