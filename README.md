@@ -4,14 +4,17 @@
 _Born2beRoot is a System Administration exercise from 42 School core curriculum. The task at hand is to create a machine using VirtualBox, complying with strict rules._
 ___
 
-<details>
+<details open>
   <summary><h2>1. Virtual Machine: creation</h2></summary>
 
 > _A Virtual Machine (VM) is a computer file, commonly referred to as an image, that behaves like an actual computer: that is, a virtual computer within a computer._
 
-</br>
+___
 
-:warning: **Pre-requisites:** have [VirtualBox](https://www.virtualbox.org/) installed
+### :warning: Pre-requisites
+
+- have [VirtualBox](https://www.virtualbox.org/) installed;
+- have [the installer file for the Debian GNU/Linux OS](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/) downloaded.
 
 ___
 
@@ -45,7 +48,7 @@ ___
 
 </br>
 
-<details>
+<details open>
   <summary>:bulb: <strong>Debian vs. Rocky Linux</strong></summary>
 
 </br>
@@ -92,9 +95,30 @@ ___
     <td>Red Hat Enterprise Linux (RHEL) compatibility</td>
   </tr>
 </table>
-  
+
+</br>
+
 </details>
 
+### Steps
+
+1. Select `Install` from the Debian GNU/Linux installer menu;
+2. Settings
+    - Language: `English`
+    - Location: `other`
+    - Continent: `Europe`
+    - Country: `Portugal`
+    - Locale: `United States`
+    - Keyboard: `American English`
+    - Hostname: `tchow-so42` ﹡
+    - Domain name: `(blank)`
+    - Set up root password ﹡
+    - User full name: `tchow-so` ﹡
+    - Username: `tchow-so` ﹡
+    - Set up user password ﹡
+    - Clock: `Lisbon`
+
+﹡ :warning: _see subject requirements_
 ___
 
 </br>
