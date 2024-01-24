@@ -4,8 +4,8 @@
 _Born2beRoot is a System Administration exercise from 42 School core curriculum. The task at hand is to create a machine using VirtualBox, complying with strict rules._
 ___
 
-<details open>
-  <summary><h2>Virtual Machine: creation</h2></summary>
+<details>
+  <summary><h2>1. Virtual Machine · creation</h2></summary>
 
 > _A Virtual Machine (VM) is a computer file, commonly referred to as an image, that behaves like an actual computer: that is, a virtual computer within a computer._
 
@@ -78,8 +78,8 @@ ___
 </details>
 
 
-<details open>
-  <summary><h2>Operating System (Debian): installation</h2></summary>
+<details>
+  <summary><h2>2. Operating System (Debian) · installation</h2></summary>
 
 </br>
 
@@ -140,9 +140,9 @@ ___
 
 <p><b>note:</b> <i>Here, the choice for Debian over Rocky Linux was based on the first being generally regarded as a more user-friendly and accessible OS, especially for beginners.</i></p>
 
-</br>
-
 </details>
+
+</br>
 
 ### Steps
 
@@ -170,18 +170,18 @@ ___
 </details>
 
 <details open>
-  <summary><h2>VM: setup</h2></summary>
+  <summary><h2>3. VM · setup</h2></summary>
 
-<details>
-  <summary><h3>Partitioning the Disk</h3></summary>
+<details open>
+  <summary><h3>3.1. Partitioning the Disk</h3></summary>
     <ol>
       <li>Partioning method: <code>Manual</code></li>
       <li>Select the available volume</li>
       <li>Create new empty partition on the selected device: <code>Yes</code></li>
     </ol>
   
-<details>
-  <summary><h4>Create Primary Partition</h4></summary>
+<details open>
+  <summary><h4>3.1.1. Create Primary Partition</h4></summary>
 <blockquote><i>One has to create at least one primary partition on the disk.</i></blockquote>
     <ol>
       <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
@@ -194,12 +194,9 @@ ___
     </ol>
 
 ﹡ :warning: _see subject bonus requirements_
-
-</br>
-
 </details>
-<details>
-  <summary><h4>Create Logical Partition</h4></summary>
+<details open>
+  <summary><h4>3.1.2. Create Logical Partition</h4></summary>
 <blockquote><i>One can create an unlimited number of logical partitions on the disk.</i></blockquote>
     <ol>
       <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
@@ -211,17 +208,34 @@ ___
     </ol>
 
 ﹡ :warning: _see subject bonus requirements_
+</details>
+<details open>
+  <summary><h4>3.1.3. Encrypt Volumes</h4></summary>
+  <ol>
+    <li><code>Configure encrypted volumes</code></li>
+    <li>Write the changes to disk and configure encrypted volumes? <code>Yes</code></li>
+    <li><code>Create encrypted volumes</code></li>
+    <li>Select the devices to be encrypted:<code>/dev/sda5</code></li>
+    <li>Partition settings: <code>Done setting up the partition</code></li>
+    <li>Encryption configuration actions: <code>Finish</code></li>
+    <li>(Confirmation message to encryption:) <code>Yes</code></li>
+    <li>(Optional) <code>Cancel</code> – <i>since there is nothing to actually encrypt</i></li>
+    <li>Set encryption passphrase ﹡</li>
+  </ol>
+  
+﹡ :warning: _see subject bonus requirements_
+</details>
+<details open>
+  <summary><h4>3.1.4. Configure Logical Volume Manager</h4></summary>
+<div><p><b>Create Logical Partitions</b></p></div>
+  
+</br>
 
+<div><p><b>Setting Mount Points</b></p></div>
+  
 </br>
 
 </details>
-<h4>3.1.3. Encrypt Volumes</h4>
-<h4>3.1.4. Configure Logical Volume Manager</h4>
-<h4>3.1.5. Create Logical Partitions</h4>
-<h4>3.1.6. Setting Mount Points</h4>
-</details>
-
-___
 
 <h3>3.2. Login into the System</h3>
 <h3>3.3. Sudo: installation</h3>
