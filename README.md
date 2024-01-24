@@ -140,7 +140,7 @@ ___
       <li>Select the available volume</li>
       <li>Create new empty partition on the selected device: <code>Yes</code></li>
     </ol>
-
+  
 <details>
   <summary><h4>Create Primary Partition</h4></summary>
 <blockquote><i>One has to create at least one primary partition on the disk.</i></blockquote>
@@ -159,7 +159,6 @@ ___
 </br>
 
 </details>
-
 <details>
   <summary><h4>Create Logical Partition</h4></summary>
 <blockquote><i>One can create an unlimited number of logical partitions on the disk.</i></blockquote>
@@ -177,15 +176,11 @@ ___
 </br>
 
 </details>
-
-</details>
-
-
-
 <h4>3.1.3. Encrypt Volumes</h4>
 <h4>3.1.4. Configure Logical Volume Manager</h4>
 <h4>3.1.5. Create Logical Partitions</h4>
 <h4>3.1.6. Setting Mount Points</h4>
+</details>
 
 ___
 
