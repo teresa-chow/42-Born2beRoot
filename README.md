@@ -44,7 +44,7 @@ ___
 
 
 <details>
-  <summary><h2>2. Operating System (OS), Debian: installation</h2></summary>
+  <summary><h2>2. Operating System (Debian): installation</h2></summary>
 
 </br>
 
