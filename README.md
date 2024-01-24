@@ -125,25 +125,26 @@ ___
 
 </details>
 
-<details open>
+<details>
   <summary><h2>3. VM: setup</h2></summary>
 
-### 3.1. Partitioning the Disk
-#### 3.1.1. Create Primary Partition
-#### 3.1.2. Create Logical Partition
-#### 3.1.3. Encrypt Volumes
-#### 3.1.4. Configure Logical Volume Manager
-#### 3.1.5. Create Logical Partitions
-#### 3.1.6. Setting Mount Points
+<h3>3.1. Partitioning the Disk</h3>
+<h4>3.1.1. Create Primary Partition</h4>
+<h4>3.1.2. Create Logical Partition</h4>
+<h4>3.1.3. Encrypt Volumes</h4>
+<h4>3.1.4. Configure Logical Volume Manager</h4>
+<h4>3.1.5. Create Logical Partitions</h4>
+<h4>3.1.6. Setting Mount Points</h4>
 
 ___
 
-### 3.2. Login into the System
-### 3.3. Sudo: installation
-### 3.4. Configure Groups and Users
-### 3.5. Vim: installation
-### 3.7. Uncomplicated Firewall (UFW): installation & configuration
-### 3.8. SSH: connection
+<h3>3.2. Login into the System</h3>
+<h3>3.3. Sudo: installation</h3>
+<h3>3.4. Configure Groups and Users</h3>
+<h3>3.5. Vim: installation</h3>
+<h3>3.7. Uncomplicated Firewall (UFW): installation & configuration</h3>
+<h3>3.8. SSH: connection</h3>
+Sudo, hostname, password
 
 ___
 
@@ -151,16 +152,9 @@ ___
 
 </details>
 
-
-
-
-</br>
-
-___
-
-</br>
-
-## 4. 
+<details>
+  <summary><h2>4. Monitoring script</h2></summary>
+</details>
 
 </br>
 
