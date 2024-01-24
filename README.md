@@ -85,6 +85,11 @@ ___
     <td>Dandified YUM / DNF</td>
   </tr>
   <tr>
+    <td><strong>Release cycle</strong></td>
+    <td>2 years</td>
+    <td>1 year</td>
+  </tr>
+  <tr>
     <td><strong>Long Term Support (LTS)</strong></td>
     <td>5 years</td>
     <td>10 years</td>
