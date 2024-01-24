@@ -163,10 +163,9 @@ ___
     <ol>
       <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
       <li>How to use this free space: <code>Create a new partition</code></li>
-      <li>Enter new partition size in Bytes: <code>525336576 B</code>﹡</li>
-      <li>New partition type: <code>Primary</code></li>
-      <li>Location for the new partition: <code>Beginning</code></li>
-      <li>Mount point for this partition: <code>/boot</code></li>
+      <li>Set new partition size to <code>max</code>, in Bytes: <code>32554300416 B</code>﹡</li>
+      <li>New partition type: <code>Logical</code></li>
+      <li>Mount point for this partition: <code>Do not mount it</code></li>
       <li>Partition settings: <code>Done setting up the partition</code></li>
     </ol>
 
