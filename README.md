@@ -144,6 +144,17 @@ ___
     
 <h4>Create Primary Partition</h4>
 <blockquote><i>One has to create at least one primary partition on the disk.</i></blockquote>
+    <ol>
+      <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
+      <li>How to use this free space: <code>Create a new partition</code></li>
+      <li>Enter new partition size in Bytes: <code>525336576 B</code>﹡</li>
+      <li>New partition type: <code>Primary</code></li>
+      <li>Location for the new partition: <code>Beginning</code></li>
+      <li>Mount point for this partition: <code>/boot</code></li>
+      <li>Partition settings: <code>Done setting up the partition</code></li>
+    </ol>
+
+﹡ :warning: _see subject bonus requirements_
 
 </br>
 
