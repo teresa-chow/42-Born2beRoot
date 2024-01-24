@@ -133,16 +133,16 @@ ___
 <details open>
   <summary><h2>VM: setup</h2></summary>
 
-<h3>Partitioning the Disk</h3>
+<details>
+  <summary><h3>Partitioning the Disk</h3></summary>
     <ol>
       <li>Partioning method: <code>Manual</code></li>
       <li>Select the available volume</li>
       <li>Create new empty partition on the selected device: <code>Yes</code></li>
     </ol>
 
-</br>
-    
-<h4>Create Primary Partition</h4>
+<details>
+  <summary><h4>Create Primary Partition</h4></summary>
 <blockquote><i>One has to create at least one primary partition on the disk.</i></blockquote>
     <ol>
       <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
@@ -158,7 +158,10 @@ ___
 
 </br>
 
-<h4>Create Logical Partition</h4>
+</details>
+
+<details>
+  <summary><h4>Create Logical Partition</h4></summary>
 <blockquote><i>One can create an unlimited number of logical partitions on the disk.</i></blockquote>
     <ol>
       <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
@@ -170,6 +173,14 @@ ___
     </ol>
 
 ﹡ :warning: _see subject bonus requirements_
+
+</br>
+
+</details>
+
+</details>
+
+
 
 <h4>3.1.3. Encrypt Volumes</h4>
 <h4>3.1.4. Configure Logical Volume Manager</h4>
