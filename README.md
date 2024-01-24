@@ -4,7 +4,7 @@
 _Born2beRoot is a System Administration exercise from 42 School core curriculum. The task at hand is to create a machine using VirtualBox, complying with strict rules._
 ___
 
-<details open>
+<details>
   <summary><h2>1. Virtual Machine: creation</h2></summary>
 
 > _A Virtual Machine (VM) is a computer file, commonly referred to as an image, that behaves like an actual computer: that is, a virtual computer within a computer._
@@ -43,12 +43,12 @@ ___
 </details>
 
 
-<details open>
+<details>
   <summary><h2>2. Operating System (OS), Debian: installation</h2></summary>
 
 </br>
 
-<details open>
+<details>
   <summary>:bulb: <strong>Debian vs. Rocky Linux</strong></summary>
 
 </br>
