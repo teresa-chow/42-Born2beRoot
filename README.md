@@ -134,14 +134,22 @@ ___
   <summary><h2>VM: setup</h2></summary>
 
 <h3>Partitioning the Disk</h3>
-    <ul><li>Partioning method: <code>Manual</code></li></ul>
+    <ol>
+      <li>Partioning method: <code>Manual</code></li>
+      <li>Select the available volume</li>
+      <li>Create new empty partition on the selected device: <code>Yes</code></li>
+    </ol>
 
 </br>
     
 <h4>Create Primary Partition</h4>
 <blockquote><i>One has to create at least one primary partition on the disk.</i></blockquote>
 
-<h4>3.1.2. Create Logical Partition</h4>
+</br>
+
+<h4>Create Logical Partition</h4>
+<blockquote><i>One can create an unlimited number of logical partitions on the disk.</i></blockquote>
+
 <h4>3.1.3. Encrypt Volumes</h4>
 <h4>3.1.4. Configure Logical Volume Manager</h4>
 <h4>3.1.5. Create Logical Partitions</h4>
