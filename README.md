@@ -4,17 +4,52 @@
 _Born2beRoot is a System Administration exercise from 42 School core curriculum. The task at hand is to create a machine using VirtualBox, complying with strict rules._
 ___
 
-<details>
+<details open>
   <summary><h2>Virtual Machine: creation</h2></summary>
 
 > _A Virtual Machine (VM) is a computer file, commonly referred to as an image, that behaves like an actual computer: that is, a virtual computer within a computer._
 
-___
+</br>
+
+<details>
+  <summary>:bulb: <b>Advantages and disadvantages of using VMs</b></summary>
+
+</br>
+
+<table>
+  <tr>
+    <th>Advantages</th>
+    <th>Disadvantages</th>
+  </tr>
+  <tr>
+    <td>:heavy_check_mark: Agility and speed</td>
+    <td>:x: Unintended server sprawl</td>
+  </tr>
+  <tr>
+    <td>:heavy_check_mark: <b>Lowered downtime:</b> if backup and redundancy mechanisms are in place, since VMs are portable and easy to move from one hypervisor to another on a different machine</td>
+    <td>:x: <b>Single point of failure:</b>  unless backup and redundancy mechanisms are in place, if the host computer fails, all VMs running on that machine will also fail</td>
+  </tr>
+  <tr>
+    <td>:heavy_check_mark: Scalability</td>
+    <td>:x: Hardware limitations</td>
+  </tr>
+  <tr>
+    <td>:heavy_check_mark: <b>Security benefits:</b> ability to run apps of questionable security, study computer viruses, while protecting host OS</td>
+    <td>:x: <b>Security risks:</b> if VMs are not properly isolated from each other or/and from the host machine, virtualization can introduce additional security risks</td>
+  </tr>
+    <tr>
+    <td>:heavy_check_mark: <b>Cost savings:</b> reduced physical infrastructure footprint</td>
+    <td>:x: <b>License cost:</b> some software licenses may not allow installation on VMs or require an additional license fee per VM</td>
+  </tr>
+</table>
+</details>
+
+</br>
 
 ### :warning: Pre-requisites
 
 - have [VirtualBox](https://www.virtualbox.org/) installed;
-- have [the installer file for the Debian GNU/Linux OS](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/) downloaded.
+- have [the ISO (Optical Disc Image) installer file for the Debian GNU/Linux OS](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/) downloaded.
 
 ___
 
@@ -43,7 +78,7 @@ ___
 </details>
 
 
-<details>
+<details open>
   <summary><h2>Operating System (Debian): installation</h2></summary>
 
 </br>
@@ -100,6 +135,10 @@ ___
     <td>Red Hat Enterprise Linux (RHEL) compatibility</td>
   </tr>
 </table>
+
+</br>
+
+<p><b>note:</b> <i>Here, the choice for Debian over Rocky Linux was based on the first being generally regarded as a more user-friendly and accessible OS, especially for beginners.</i></p>
 
 </br>
 
