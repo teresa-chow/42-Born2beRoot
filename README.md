@@ -31,7 +31,7 @@ ___
 7. Choose `VDI` (VirtualBox Disk Image) as the type of file to use for the new virtual hard disk
 8. Choose storage on physical hard disk as being `dynamically allocated`
 9. Select the size of the virtual hard disk
-    - `30GB` in this case, to account for bonus requirements
+    - `33079636992 B` – to account for subject bonus requirements
 10. Click `Create`
 11. Head to `Settings` > `Storage` > `Empty` > 💿 icon (_Attributes: Optical Drive_) > `Choose a disk file` > `Debian ISO` > `Open` > `Ok`
 12. `Start` the VM
@@ -160,6 +160,17 @@ ___
 
 <h4>Create Logical Partition</h4>
 <blockquote><i>One can create an unlimited number of logical partitions on the disk.</i></blockquote>
+    <ol>
+      <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
+      <li>How to use this free space: <code>Create a new partition</code></li>
+      <li>Enter new partition size in Bytes: <code>525336576 B</code>﹡</li>
+      <li>New partition type: <code>Primary</code></li>
+      <li>Location for the new partition: <code>Beginning</code></li>
+      <li>Mount point for this partition: <code>/boot</code></li>
+      <li>Partition settings: <code>Done setting up the partition</code></li>
+    </ol>
+
+﹡ :warning: _see subject bonus requirements_
 
 <h4>3.1.3. Encrypt Volumes</h4>
 <h4>3.1.4. Configure Logical Volume Manager</h4>
