@@ -399,7 +399,7 @@ ___
       <code>su --login</code>
       <ul>
         <li><code>su</code> run a command with substitute user and group ID</li>
-        <li><code>--login</code> start the shell as a login shell with an environment similar to a real login</li>
+        <li><code>-</code>, <code>-l</code>, <code>--login</code> start the shell as a login shell with an environment similar to a real login</li>
       </ul>
     </li>
     <li>
