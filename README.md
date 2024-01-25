@@ -388,8 +388,56 @@ ___
   </ol>
 </details>
 <details open>
-  <summary><h3>3.5. Sudo: installation</h3></summary>
+  <summary><h3>3.5. sudo · installation & configuration</h3></summary>
+  <blockquote><i>sudo</i></blockquote>
+  <div><p><b>Installation</b></p></div>
+  <ol>
+    <li>
+      <code>su --login</code>
+      <ul>
+        <li><code>su</code> run a command with substitute user and group ID</li>
+        <li><code>--login</code> start the shell as a login shell with an environment similar to a real login</li>
+      </ul>
+    </li>
+    <li>
+      <code>apt-get update -y</code>
+      <ul>
+        <li><code>apt-get</code> APT package handling utility -- command-line interface</li>
+        <li><code>update</code> update is used to resynchronize the package index files from their sources</li>
+        <li><code>-y</code> automatic yes to prompts</li>
+      </ul>
+    </li>
+    <li>
+      <code>apt-get upgrade -y</code>
+      <ul>
+        <li><code>upgrade</code> upgrade is used to install the newest versions of all packages currently installed on the system from the sources enumerated in /etc/apt/sources.list</li>
+      </ul>
+    </li>
+        <li>
+      <code>apt install sudo</code>
+      <ul>
+        <li><code>apt</code> command-line interface</li>
+        <li><code>install</code> performs the requested action on one or more packages</li>
+      </ul>
+    </li>
+  </ol>
+
+  </br>
+
+  <div><p><b>Configuration</b></p></div>
+  <ol>
+    <li>
+      <code>usermod -aG sudo &ltusername&gt</code>
+      <ul><code>usermod</code> modify a user account</ul>
+      <ul><code>-a</code>, <code>--append</code> add the user to the supplementary group(s); use only with the -G option</ul>
+      <ul><code>-G</code>, <code>--groups</code> a list of supplementary groups which the user is also a member of</ul>
+    </li>
+    <li><code>visudo</code> edit the sudoers file</li>
+    <li> Add <code>ALL=(ALL) ALL</code> under <code>#User Privilege</code> section</li>
+    <li><code>reboot</code></li>
+  </ol>
 </details>
+
 <details open>
   <summary><h3>3.6. Configure Groups and Users</h3></summary>
 </details>
@@ -429,6 +477,10 @@ ___
 [@PedroZappa](https://github.com/PedroZappa)'s [Born2beRoot](https://github.com/PedroZappa/Born2beRoot) accessed 25 Jan. 2024
 
 [@mota494](https://github.com/mota494)'s [Born2beRoot](https://github.com/mota494/42_Born2BeRoot) accessed 25 Jan. 2024
+
+[sudo](sudo.ws) accessed 25 Jan. 2024
+
+Linux man pages accessed 25 Jan. 2024
 
 </br>
 
