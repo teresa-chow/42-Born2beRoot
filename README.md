@@ -242,13 +242,51 @@ ___
 
   <p><b>Create Logical Partitions</b></p>
 <ol>
-  <li><code>Create logical volume</code></li>
+  <li>LVM configuration action: <code>Create logical volume</code></li>
   <li>Select the volume group where the new logical volume should be created: <code>LVMGroup</code></li>
   <li>Enter logical volume name
   <li>Enter the size of the new logical volume</li>
+  <li>Repeat the steps above for each of the following volumes:</li>
 </ol>
 
-<table></table>
+<table>
+<tr>
+  <th><b>Logical volume name</b></th>
+  <th><b>Logical volume size</b></th>
+</tr>
+<tr>
+  <td><code>root</code></td>
+  <td>10737418240 B</td>
+</tr>
+<tr>
+  <td><code>swap</code></td>
+  <td>2465607424 B</td>
+</tr>
+<tr>
+  <td><code>home</code></td>
+  <td>5368709120 B</td>
+</tr>
+<tr>
+  <td><code>var</code></td>
+  <td>3221225472 B</td>
+</tr>
+<tr>
+  <td><code>srv</code></td>
+  <td>3221225472 B</td>
+</tr>
+<tr>
+  <td><code>tmp</code></td>
+  <td>3221225472 B</td>
+</tr>
+<tr>
+  <td><code>var-log</code></td>
+  <td>4294967296 B</td>
+</tr>
+</table>
+
+<ol start="6">
+  <li>LVM configuration action: <code>Finish</code></li>
+</ol>
 
 </br>
 
