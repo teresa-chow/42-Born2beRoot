@@ -444,28 +444,20 @@ ___
 <details open>
   <summary><h3>3.6. Vim · installation</h3></summary>
   <code>sudo apt install vim</code>
-  <ul>
-    <li><code>sudo</code> execute a command as another user</li>
-  </ul>
 </details>
 
 <details open>
   <summary><h3>3.7. Groups and Users · creation & configuration</h3></summary>
-<div><p><b>Create group</b></p></div>
-<p><code>sudo groupadd &ltgroup_name&gt</code></p>
-
-</br>
-
-<div><p><b>Create user</b></p></div>
-
-</br>
-
-<div><p><b>Add user to group</b></p></div>
-
+<ul>
+  <li><code>sudo groupadd &ltgroupname&gt</code> create a group with specified &ltgroupname&gt</li>
+  <li><code>vim /etc/passwd</code> open the file where one can check existing users (if not 'sudo', this file is read-only)</li>
+  <li><code>sudo adduser &ltusername&gt</code> create a user with specified &ltusername&gt</li>
+  <li><code>sudo usermod -aG &ltgroupname&gt &ltusername&gt</code> add user to group</li>
+</ul>
 </details>
 
 <details open>
-  <summary><h3>3.10. SSH · installation & configuration</h3></summary>
+  <summary><h3>3.10. Secure Shell (SSH) · installation & configuration</h3></summary>
 </details>
 
 <details open>
