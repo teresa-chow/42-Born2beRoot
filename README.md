@@ -480,12 +480,14 @@ ___
 
 <details open>
   <summary><h3>3.8. Secure Shell (SSH) · installation & configuration</h3></summary>
-  <code>sudo apt install openssh-server</code>
-  <code>sudo vim /etc/ssh/sshd_config</code>
-  #Port 22 ⇒ Port 4242
-  <code>sudo vim /etc/ssh/ssh_config</code>
-  #Port 22 ⇒ Port 4242
-  <code>sudo service ssh restart</code>
+  <ol>
+    <li><code>sudo apt install openssh-server</code></li>
+    <li><code>sudo vim /etc/ssh/sshd_config</code></li>
+    <li>edit the text, replacing <code># Port 22</code> by <code>Port 4242</code></li>, and save
+    <li><code>sudo vim /etc/ssh/ssh_config</code></li>
+    <li>edit the text, replacing <code># Port 22</code> by <code>Port 4242</code></li>, and save
+    <li><code>sudo service ssh restart</code></li>
+  </ol>
 </details>
 
 <details open>
