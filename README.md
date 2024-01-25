@@ -496,7 +496,7 @@ ___
 
 [sudo](sudo.ws) accessed 25 Jan. 2024
 
-Linux man pages accessed 25 Jan. 2024
+Linux man pages
 
 </br>
 
