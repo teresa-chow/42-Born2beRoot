@@ -365,6 +365,19 @@ ___
 
 </details>
 
+<--! TO DO: FRAME THE FOLLOWING STEPS
+ Accept confirmation message;
+ Say NO to additional packages;
+ Select country;
+ Set Debian archive mirror package manager: deb.debian.org;
+ Leave HTTP proxy empty and click Continue;
+ Say NO to the popularity contest;
+ Remove all software options and press Continue;
+ Say Yes to the installation of GRUB boot loader;
+ Select device to install the bootloader: /dev/sda (ata_VBOX_HARDDISK);
+ Select Continue;
+-->
+
 <h3>3.4. Login into the System</h3>
 <h3>3.5. Sudo: installation</h3>
 <h3>3.6. Configure Groups and Users</h3>
