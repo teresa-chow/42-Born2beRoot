@@ -244,7 +244,7 @@ ___
 <ol>
   <li>LVM configuration action: <code>Create logical volume</code></li>
   <li>Select the volume group where the new logical volume should be created: <code>LVMGroup</code></li>
-  <li>Enter logical volume name
+  <li>Enter logical volume name</li>
   <li>Enter the size of the new logical volume</li>
   <li>Repeat the steps above for each of the following volumes:</li>
 </ol>
@@ -291,7 +291,95 @@ ___
 </br>
 
 <div><p><b>Setting Mount Points</b></p></div>
-  
+<ol>
+  <li>Select volume</li>
+  <li>Set Use as</li>
+  <li>Set mount point</li>
+  <li><code>Done setting up the partition</code></li>
+  <li>Repeat the steps above for each of the following volumes:</li>
+</ol>
+<table>
+  <tr>
+    <th><b>Partition</b></th>
+    <th><b>Volume name</b></th>
+    <th><b>Use</b></th>
+    <th><b>Mount point</b></th>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td><code>home</code></td>
+    <td>Ext4</td>
+    <td><code>/home</code></td>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td><code>root</code></td>
+    <td>Ext4</td>
+    <td><code>/</code></td>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td><code></code></td>
+    <td></td>
+    <td><code></code></td>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td><code></code></td>
+    <td></td>
+    <td><code></code></td>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td><code></code></td>
+    <td></td>
+    <td><code></code></td>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td><code></code></td>
+    <td></td>
+    <td><code></code></td>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td><code></code></td>
+    <td></td>
+    <td><code></code></td>
+  </tr>
+</table>
+ 
+ Select partition #1, swap;
+ Set Use as to swap area;
+ Select Done setting up the partition;
+ 
+ Select partition #1, tmp;
+ Set Use as to Ext4;
+ Set Mount Point: /tmp;
+ Select Done setting up the partition;
+ 
+ Select partition #1, var;
+ Set Use as to Ext4;
+ Set Mount Point: /var;
+ Select Done setting up the partition;
+ 
+ <table>
+  <tr>
+    <th><b>Partition</b></th>
+    <th><b>Volume name</b></th>
+    <th><b>Use</b></th>
+    <th><b>Mount point</b></th>
+    <th><b>Enter</b></th>
+  </tr>
+</table>
+ Select partition #1, var-log;
+ Set Use as to Ext4;
+ Set Mount Point: Enter manually;
+ Enter /var/log;
+ Select Done setting up the partition;
+ 
+ <code>Finish partitioning and write changes to disk</code>
+
 </br>
 
 </details>
