@@ -443,6 +443,7 @@ ___
 
 <details open>
   <summary><h3>3.6. Vim · installation</h3></summary>
+  <blockquote>Vi Improved (Vim) is a highly configurable text editor built to make creating and changing any kind of text very efficient; it is upwards compatible to Vi</blockquote>
   <code>sudo apt install vim</code>
 </details>
 
