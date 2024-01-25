@@ -448,17 +448,28 @@ ___
 
 <details open>
   <summary><h3>3.7. Groups and Users · creation & configuration</h3></summary>
+<div><p><b>Create group</b></p></div>
+<p><code>sudo groupadd &ltgroup_name&gt</code></p>
+
+</br>
+
+<div><p><b>Create user</b></p></div>
+
+</br>
+
+<div><p><b>Add user to group</b></p></div>
+
 </details>
 
 <details open>
-  <summary><h3>3.10. SSH · installation</h3></summary>
+  <summary><h3>3.10. SSH · installation & configuration</h3></summary>
 </details>
 
 <details open>
   <summary><h3>3.9. Uncomplicated Firewall (UFW) · installation & configuration</h3>
 </details>
 <details open>
-  <summary><h3>3.10. SSH · connection</h3></summary>
+  <summary><h3>3.10. SSH · connection to a physical machine</h3></summary>
 </details>
 Sudo, hostname, password
 
