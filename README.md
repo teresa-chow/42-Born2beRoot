@@ -416,11 +416,18 @@ ___
         <li><code>upgrade</code> upgrade is used to install the newest versions of all packages currently installed on the system from the sources enumerated in /etc/apt/sources.list</li>
       </ul>
     </li>
-        <li>
+    <li>
       <code>apt install sudo</code>
       <ul>
         <li><code>apt</code> command-line interface</li>
         <li><code>install</code> performs the requested action on one or more packages</li>
+      </ul>
+    </li>
+    <li>
+      <code>dpkg -l | grep sudo</code> verify whether the sudo package was installed successfully
+      <ul>
+        <li><code>dpkg -l</code> list packages matching given pattern ('dpkg', package manager for Debian)</li>
+        <li><code>grep</code> print lines that match patterns</li>
       </ul>
     </li>
   </ol>
