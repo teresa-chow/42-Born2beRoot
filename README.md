@@ -461,6 +461,16 @@ ___
   <li><code>vim /etc/passwd</code> open the file where one can check existing users (if not 'sudo', this file is read-only)</li>
   <li><code>sudo adduser &ltusername&gt</code> create a user with specified &ltusername&gt</li>
   <li><code>sudo usermod -aG &ltgroupname&gt &ltusername&gt</code> add user to group</li>
+  <li><code>getent group</code>check groups</li>
+  <li><code>getent group &ltgroupname&gt</code>check group users</li>
+</ul>
+
+:warning: <code>reboot</code> and verify 'sudo' powers:
+<ul>
+  <li><code>sudo -v</code><li>
+  <li><ul>
+    <li><code>-v</code>, <code>--validate</code> update the user's cached credentials, authenticating the user if necessary.</li>
+  </ul></li>
 </ul>
 </details>
 
