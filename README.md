@@ -495,6 +495,8 @@ ___
 
 [@mota494](https://github.com/mota494)'s [Born2beRoot](https://github.com/mota494/42_Born2BeRoot) accessed 25 Jan. 2024
 
+[@rphlr](https://github.com/rphlr)'s [42-born2beroot](https://github.com/rphlr/42-born2beroot/) accessed 25 Jan. 2024
+
 [sudo](sudo.ws) accessed 25 Jan. 2024
 
 Linux man pages
