@@ -209,6 +209,7 @@ ___
 
 ﹡ :warning: _see subject bonus requirements_
 </details>
+</details>
 <details open>
   <summary><h3>3.2. Encrypt Volumes</h3></summary>
   <ol>
