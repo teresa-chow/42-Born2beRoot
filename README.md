@@ -381,6 +381,11 @@ ___
 
 <details open>
   <summary><h3>3.4. Login into the System</h3></summary>
+  <ol>
+    <li>Enter encryption password</li>
+    <li>Enter user</li>
+    <li>Enter user password</li>
+  </ol>
 </details>
 <details open>
   <summary><h3>3.5. Sudo: installation</h3></summary>
