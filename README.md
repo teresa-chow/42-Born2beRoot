@@ -465,12 +465,16 @@ ___
   <li><code>getent group &ltgroupname&gt</code>check group users</li>
 </ul>
 
+</br>
+
 :warning: <code>reboot</code> and verify 'sudo' powers:
 <ul>
-  <li><code>sudo -v</code><li>
-  <li><ul>
-    <li><code>-v</code>, <code>--validate</code> update the user's cached credentials, authenticating the user if necessary.</li>
-  </ul></li>
+  <li>
+    <code>sudo -v</code>
+    <ul>
+      <li><code>-v</code>, <code>--validate</code> update the user's cached credentials, authenticating the user if necessary.</li>
+    </ul>
+  </li>
 </ul>
 </details>
 
