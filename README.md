@@ -472,7 +472,7 @@ ___
   <li>
     <code>sudo -v</code>
     <ul>
-      <li><code>-v</code>, <code>--validate</code> update the user's cached credentials, authenticating the user if necessary.</li>
+      <li><code>-v</code>, <code>--validate</code> update the user's cached credentials, authenticating the user if necessary</li>
     </ul>
   </li>
 </ul>
@@ -480,6 +480,12 @@ ___
 
 <details open>
   <summary><h3>3.8. Secure Shell (SSH) · installation & configuration</h3></summary>
+  <code>sudo apt install openssh-server</code>
+  <code>sudo vim /etc/ssh/sshd_config</code>
+  #Port 22 ⇒ Port 4242
+  <code>sudo vim /etc/ssh/ssh_config</code>
+  #Port 22 ⇒ Port 4242
+  <code>sudo service ssh restart</code>
 </details>
 
 <details open>
