@@ -210,7 +210,7 @@ ___
 ﹡ :warning: _see subject bonus requirements_
 </details>
 <details open>
-  <summary><h4>3.1.3. Encrypt Volumes</h4></summary>
+  <summary><h3>3.2. Encrypt Volumes</h3></summary>
   <ol>
     <li><code>Configure encrypted volumes</code></li>
     <li>Write the changes to disk and configure encrypted volumes? <code>Yes</code></li>
@@ -226,7 +226,7 @@ ___
 ﹡ :warning: _see subject bonus requirements_
 </details>
 <details open>
-  <summary><h4>3.1.4. Configure Logical Volume Manager</h4></summary>
+  <summary><h3>3.3. Configure Logical Volume Manager</h3></summary>
 <div><p><b>Create Logical Partitions</b></p></div>
   
 </br>
@@ -237,12 +237,12 @@ ___
 
 </details>
 
-<h3>3.2. Login into the System</h3>
-<h3>3.3. Sudo: installation</h3>
-<h3>3.4. Configure Groups and Users</h3>
-<h3>3.5. Vim: installation</h3>
-<h3>3.7. Uncomplicated Firewall (UFW): installation & configuration</h3>
-<h3>3.8. SSH: connection</h3>
+<h3>3.4. Login into the System</h3>
+<h3>3.5. Sudo: installation</h3>
+<h3>3.6. Configure Groups and Users</h3>
+<h3>3.7. Vim: installation</h3>
+<h3>3.8. Uncomplicated Firewall (UFW): installation & configuration</h3>
+<h3>3.9. SSH: connection</h3>
 Sudo, hostname, password
 
 ___
