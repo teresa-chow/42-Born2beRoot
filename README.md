@@ -439,16 +439,22 @@ ___
 </details>
 
 <details open>
-  <summary><h3>3.6. Configure Groups and Users</h3></summary>
+  <summary><h3>3.6. Vim · installation</h3></summary>
+  <code>sudo apt install vim</code>
+  <ul>
+    <li><code>sudo</code> execute a command as another user</li>
+  </ul>
+</details>
+
+<details open>
+  <summary><h3>3.7. Groups and Users · creation & configuration</h3></summary>
+</details>
+
+<details open>
+  <summary><h3>3.8. Uncomplicated Firewall (UFW) · installation & configuration</h3>
 </details>
 <details open>
-  <summary><h3>3.7. Vim: installation</h3></summary>
-</details>
-<details open>
-  <summary><h3>3.8. Uncomplicated Firewall (UFW): installation & configuration</h3>
-</details>
-<details open>
-  <summary><h3>3.9. SSH: connection</h3></summary>
+  <summary><h3>3.9. SSH · connection</h3></summary>
 </details>
 Sudo, hostname, password
 
