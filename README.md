@@ -379,12 +379,24 @@ ___
  Select Continue;
 -->
 
-<h3>3.4. Login into the System</h3>
-<h3>3.5. Sudo: installation</h3>
-<h3>3.6. Configure Groups and Users</h3>
-<h3>3.7. Vim: installation</h3>
-<h3>3.8. Uncomplicated Firewall (UFW): installation & configuration</h3>
-<h3>3.9. SSH: connection</h3>
+<details open>
+  <summary><h3>3.4. Login into the System</h3></summary>
+</details>
+<details open>
+  <summary><h3>3.5. Sudo: installation</h3></summary>
+</details>
+<details open>
+  <summary><h3>3.6. Configure Groups and Users</h3></summary>
+</details>
+<details open>
+  <summary><h3>3.7. Vim: installation</h3></summary>
+</details>
+<details open>
+  <summary><h3>3.8. Uncomplicated Firewall (UFW): installation & configuration</h3>
+</details>
+<details open>
+  <summary><h3>3.9. SSH: connection</h3></summary>
+</details>
 Sudo, hostname, password
 
 ___
@@ -409,9 +421,9 @@ ___
 
 [Rocky Linux website](https://rockylinux.org/) accessed 23 Jan. 2024
 
-[@PedroZappa](https://github.com/PedroZappa)'s [Born2beRoot](https://github.com/PedroZappa/Born2beRoot) accessed 23 Jan. 2024
+[@PedroZappa](https://github.com/PedroZappa)'s [Born2beRoot](https://github.com/PedroZappa/Born2beRoot) accessed 25 Jan. 2024
 
-[@mota494](https://github.com/mota494)'s [Born2beRoot](https://github.com/mota494/42_Born2BeRoot) accessed 23 Jan. 2024
+[@mota494](https://github.com/mota494)'s [Born2beRoot](https://github.com/mota494/42_Born2BeRoot) accessed 25 Jan. 2024
 
 </br>
 
