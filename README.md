@@ -457,7 +457,7 @@ ___
 </details>
 
 <details open>
-  <summary><h3>3.10. Secure Shell (SSH) · installation & configuration</h3></summary>
+  <summary><h3>3.8. Secure Shell (SSH) · installation & configuration</h3></summary>
 </details>
 
 <details open>
