@@ -451,10 +451,14 @@ ___
 </details>
 
 <details open>
-  <summary><h3>3.8. Uncomplicated Firewall (UFW) · installation & configuration</h3>
+  <summary><h3>3.10. SSH · installation</h3></summary>
+</details>
+
+<details open>
+  <summary><h3>3.9. Uncomplicated Firewall (UFW) · installation & configuration</h3>
 </details>
 <details open>
-  <summary><h3>3.9. SSH · connection</h3></summary>
+  <summary><h3>3.10. SSH · connection</h3></summary>
 </details>
 Sudo, hostname, password
 
