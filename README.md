@@ -226,9 +226,30 @@ ___
 ﹡ :warning: _see subject bonus requirements_
 </details>
 <details open>
-  <summary><h3>3.3. Configure Logical Volume Manager</h3></summary>
-<div><p><b>Create Logical Partitions</b></p></div>
-  
+  <summary><h3>3.3. Configure Logical Volume Manager (LVM)</h3></summary>
+<p>Write the changes to disks and configure LVM? <code>Yes</code></p>
+
+</br>
+
+<div>
+  <p><b>Create Volume Group</b></p>
+<ol>
+  <li><code>Create volume group</code></li>
+  <li>Enter volume group name: <code>LVMGroup</code></li>
+</ol>
+
+</br>
+
+  <p><b>Create Logical Partitions</b></p>
+<ol>
+  <li><code>Create logical volume</code></li>
+  <li>Select the volume group where the new logical volume should be created: <code>LVMGroup</code></li>
+  <li>Enter logical volume name
+  <li>Enter the size of the new logical volume</li>
+</ol>
+
+<table></table>
+
 </br>
 
 <div><p><b>Setting Mount Points</b></p></div>
