@@ -390,6 +390,9 @@ ___
 <details open>
   <summary><h3>3.5. sudo · installation & configuration</h3></summary>
   <blockquote><i>sudo allows a permitted user to execute a command as the superuser or another user, as specified by the security policy</i></blockquote>
+
+  </br>
+  
   <div><p><b>Installation</b></p></div>
   <ol>
     <li>
