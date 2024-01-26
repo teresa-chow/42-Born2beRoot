@@ -560,11 +560,59 @@ ___
     Open terminal on physical machine and execute
     <div><code>ssh &ltVMusername&gt@&ltVM_ipaddress&gt -p 4242</code></div>
   </li>
+  <li>
+    <code>exit</code> to close the connection
+  </li>
 </ol>
 </details>
 
 <details open>
   <summary><h3>3.11. Password policy · setup & configuration</h3></summary>
+    <div><p><b>Configure shadow password suite</b></p></div>
+  <ol>
+    <li><code>sudo vim /etc/login.defs</code></li>
+    <li>Set</br>
+      <code>PASS_MAX_DAYS</code> to <code>30</code></br>
+      <code>PASS_MIN_DAYS</code> to <code>2</code></br>
+      <code>PASS_WARN_AGE</code> to <code>7</code>
+    </li>
+  </ol>
+  
+  </br>
+  
+  <div><p><b>Install pwquality</b></p></div>
+  <blockquote><i>What is pwquality?</i></blockquote>
+  <ol start="">
+    <li><code>sudo apt-get install libpam-pwquality</code></li>
+  </ol>
+
+  </br>
+
+  <div><p><b>Configure pwquality</b></p></div>
+  <ol start="">
+    <li><code>sudo vim /etc/pam.d/common-password</code></li>
+    <li>
+      Edit the <code>pam_pwquality.so</code> line, by adding</br><code>retry=3 minlen=10 ucredit=-1 dcredit=-1 lcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root</code> next to it
+      <ul>
+        <li><code>retry</code> number of retries</li>
+        <li><code>minlen</code> minimum number of characters a password must contain</li>
+        <li>
+          <code>ucredit</code> (upper credit) password must contain at least/at most 'n' uppercase characters
+          <ul>
+            <li><code>-</code> defines the lower bound</li>
+            <li><code>+</code> defines the upper bound</li>
+          </ul>
+        </li>
+        <li><code>dcredit</code> (digit credit) password must contain at least/at most 'n' digits</li>
+        <li><code>lcredit</code> (lower credit) password must contain at least/at most 'n' lowercase characters</li>
+        <li><code>maxrepeat</code> password must not repeat same character consecutively more than 'n' number of times</li>
+        <li><code>reject_username</code> password must not contain username</li>
+        <li><code>difok</code> the minimum number of characters that must be different from the old password</li>
+        <li><code>enforce_for_root</code> implement password policy to root</li>
+      </ul>
+    </li>
+    <li>Save and exit</li>
+  </ol>
 </details>
 
 ___
