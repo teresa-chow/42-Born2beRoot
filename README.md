@@ -398,7 +398,7 @@ ___
     <li>
       <code>su --login</code>
       <ul>
-        <li><code>su</code> run a command with substitute user and group ID</li>
+        <li><code>su</code> execute a command with substitute user and group ID</li>
         <li><code>-</code>, <code>-l</code>, <code>--login</code> start the shell as a login shell with an environment similar to a real login</li>
       </ul>
     </li>
@@ -506,12 +506,63 @@ ___
     
 <details open>
   <summary><h3>3.10. SSH · connection to a physical machine</h3></summary>
+</br><div><p><b>VirtualBox interface</b></p></div>
 <ol>
-  <li>Go to VirtualBox</li>
+  <li>Go to <code>VirtualBox</code></li>
   <li>Select chosen VM</li>
-  <li>Go to <code>Settings</code> > <code>Network</code> > </li>
+  <li>Go to <code>Settings</code> > <code>Network</code></li>
+  <li>Attach to <code>Bridge adapter</code></li>
+</ol>
+  
+</br>
+  
+<div><p><b>VM</b></p></div>
+<ol start="5">
+  <li>Start VM</li>
+  <li>Login into the system</li>
+  <li>
+    <code>hostname -I</code> check IP address
+    <ul>
+      <li><code>hostname</code> show or set the system's host name</li>
+      <li><code>-I</code>, <code>--ip-address</code> display the IP address(es) of the host</li>
+    </ul>
+  </li>
+  <li>Execute <code>sudo vim /etc/network/interfaces</code></li>
+  <li>
+    Edit text
+    <ul>
+      <li>
+        Change <code>allow-hotplug enp0s3</code> to <code>auto enp0s3</code>
+        <ul>
+          <li><code>allow-hotplug</code> manage interface on various condition changes</li>
+          <li><code>auto</code> bring up interface with provided configuration during boot time or interface link up event</li>
+        </ul>
+      </li>
+      <li>
+        Change <code>iface enp0s3 inet dhcp</code> to <code>iface enp0s3 inet static</code>
+        <ul>
+          <li><code>dhcp</code> Dynamic Host Configuration Protocol</li>
+        </ul>
+      </li>
+      <li>
+      Add
+      <div><code>address &ltipaddress&gt</code></br><code>netmask 255.255.0.0</code></br><code>gateway 10.11.254.254</code></br><code>dns 10.11.254.254</code></div>
+    </li>
+    </ul>
+  </li>
+</ol>
+  
+</br>
+  
+<div><p><b>Physical machine</b></p></div>
+<ol start="10">
+  <li>
+    Open terminal on physical machine and execute
+    <div><code>ssh &ltVMusername&gt@&ltVM_ipaddress&gt -p 4242</code></div>
+  </li>
 </ol>
 </details>
+
 Sudo, hostname, password
 
 ___
