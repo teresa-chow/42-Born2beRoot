@@ -563,7 +563,9 @@ ___
 </ol>
 </details>
 
-Sudo, hostname, password
+<details open>
+  <summary><h3>3.11. Password policy · setup & configuration</h3></summary>
+</details>
 
 ___
 
