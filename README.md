@@ -172,7 +172,7 @@ ___
 <details open>
   <summary><h2>3. VM · setup</h2></summary>
 
-<details open>
+<details>
   <summary><h3>3.1. Partitioning the Disk</h3></summary>
     <ol>
       <li>Partioning method: <code>Manual</code></li>
@@ -180,7 +180,7 @@ ___
       <li>Create new empty partition on the selected device: <code>Yes</code></li>
     </ol>
   
-<details open>
+<details>
   <summary><h4>3.1.1. Create Primary Partition</h4></summary>
 <blockquote><i>One has to create at least one primary partition on the disk.</i></blockquote>
     <ol>
@@ -195,7 +195,7 @@ ___
 
 ﹡ :warning: _see subject bonus requirements_
 </details>
-<details open>
+<details>
   <summary><h4>3.1.2. Create Logical Partition</h4></summary>
 <blockquote><i>One can create an unlimited number of logical partitions on the disk.</i></blockquote>
     <ol>
@@ -210,7 +210,7 @@ ___
 ﹡ :warning: _see subject bonus requirements_
 </details>
 </details>
-<details open>
+<details>
   <summary><h3>3.2. Encrypt Volumes</h3></summary>
   <ol>
     <li><code>Configure encrypted volumes</code></li>
@@ -226,7 +226,7 @@ ___
   
 ﹡ :warning: _see subject bonus requirements_
 </details>
-<details open>
+<details>
   <summary><h3>3.3. Configure Logical Volume Manager (LVM)</h3></summary>
 <p>Write the changes to disks and configure LVM? <code>Yes</code></p>
 
@@ -379,7 +379,7 @@ ___
  Select Continue;
 -->
 
-<details open>
+<details>
   <summary><h3>3.4. Login into the System</h3></summary>
   <ol>
     <li>Enter encryption password</li>
@@ -387,7 +387,7 @@ ___
     <li>Enter user password</li>
   </ol>
 </details>
-<details open>
+<details>
   <summary><h3>3.5. sudo · installation & configuration</h3></summary>
   <blockquote><i>sudo allows a permitted user to execute a command as the superuser or another user, as specified by the security policy</i></blockquote>
 
@@ -448,13 +448,13 @@ ___
   </ol>
 </details>
 
-<details open>
+<details>
   <summary><h3>3.6. Vim · installation</h3></summary>
   <blockquote><i>Vi Improved (Vim) is a highly configurable text editor built to make creating and changing any kind of text very efficient; it is upwards compatible to Vi</i></blockquote>
   <code>sudo apt install vim</code>
 </details>
 
-<details open>
+<details>
   <summary><h3>3.7. Groups and Users · creation & configuration</h3></summary>
 <ul>
   <li><code>sudo groupadd &ltgroupname&gt</code> create a group with specified &ltgroupname&gt</li>
@@ -478,7 +478,7 @@ ___
 </ul>
 </details>
 
-<details open>
+<details>
   <summary><h3>3.8. Secure Shell (SSH) · installation & configuration</h3></summary>
   <ol>
     <li><code>sudo apt install openssh-server</code></li>
@@ -493,7 +493,7 @@ ___
 
 </details>
 
-<details open>
+<details>
   <summary><h3>3.9. Uncomplicated Firewall (UFW) · installation & configuration</h3></summary>
     <ol>
       <li><code>sudo apt-get install ufw</code></li>
@@ -504,7 +504,7 @@ ___
     </ol>
 </details>
     
-<details open>
+<details>
   <summary><h3>3.10. SSH · connection to a physical machine</h3></summary>
 </br><div><p><b>VirtualBox interface</b></p></div>
 <ol>
@@ -573,7 +573,7 @@ ___
 
 </details>
 
-<details>
+<details open>
   <summary><h2>4. Monitoring script</h2></summary>
 </details>
 
