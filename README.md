@@ -494,7 +494,7 @@ ___
 </details>
 
 <details open>
-  <summary><h3>3.9. Uncomplicated Firewall (UFW) · installation & configuration</h3>
+  <summary><h3>3.9. Uncomplicated Firewall (UFW) · installation & configuration</h3></summary>
     <ol>
       <li><code>sudo apt-get install ufw</code></li>
       <li><code>sudo ufw enable</code></li>
