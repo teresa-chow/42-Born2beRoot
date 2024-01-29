@@ -230,22 +230,26 @@ ___
 </details>
 <details>
   <summary><h3>3.3. Logical Volume Manager (LVM) · configuration</h3></summary>
-<p>Write the changes to disks and configure LVM? <code>Yes</code></p>
+<ol>
+  <li><code>Configure Logical Volume Manager</code></li>
+  <li>Write the changes to disks and configure LVM? <code>Yes</code></li>
+</ol>
 
 </br>
 
 <div>
   <p><b>Create Volume Group</b></p>
-<ol>
+<ol start = "3">
   <li><code>Create volume group</code></li>
   <li>Enter volume group name: <code>LVMGroup</code></li>
   <li>Select partition to store the group: <code>/dev/mapper/sda5_crypt</code></li>
+  <li>Accept confirmation message</li>
 </ol>
 
 </br>
 
   <p><b>Create Logical Partitions</b></p>
-<ol>
+<ol start = "7">
   <li>LVM configuration action: <code>Create logical volume</code></li>
   <li>Select the volume group where the new logical volume should be created: <code>LVMGroup</code></li>
   <li>Enter logical volume name</li>
@@ -288,16 +292,16 @@ ___
 </tr>
 </table>
 
-<ol start="6">
+<ol start = "12">
   <li>LVM configuration action: <code>Finish</code></li>
 </ol>
 
 </br>
 
 <div><p><b>Setting Mount Points</b></p></div>
-<ol>
+<ol start = "13">
   <li>Select volume</li>
-  <li>Set Use as</li>
+  <li>Partition settings > set Use as:</li>
   <li>Set mount point</li>
   <li><code>Done setting up the partition</code></li>
   <li>Repeat the steps above for each of the following volumes:</li>
@@ -361,7 +365,7 @@ ___
   </tr>
 </table>
 
-<ol start="6">
+<ol start="18">
  <li><code>Finish partitioning and write changes to disk</code></li>
 </ol>
 
