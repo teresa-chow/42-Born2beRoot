@@ -75,7 +75,7 @@ ___
   </li>
   <li>Create a virtual hard disk now</li>
   <li>Choose <code>VDI</code> (VirtualBox Disk Image) as the type of file to use for the new virtual hard disk</li>
-  <li>Choose storage on physical hard disk aseing <code>dynamically allocated</code></li>
+  <li>Choose storage on physical hard disk as being <code>dynamically allocated</code></li>
   <li>
     Select the size of the virtual hard disk
     <ul>
