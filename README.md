@@ -577,45 +577,46 @@ ___
       <code>PASS_WARN_AGE</code> to <code>7</code>﹡
     </li>
     <li>Save and close</li>
-    <li>
-      Update password policy for already created users
-      <ul>
-        <li>
-          <code>chage -M 30 -m 2 -W 7</code></li>
-          <ul>
-            <li><code>chage</code> change user password expiry information</li>
-            <li><code>-M</code>, <code>--maxdays</code> set the maximum number of days during which a password is valid</li>
-            <li><code>-m</code>, <code>--mindays</code> set the minimum number of days between password changes</li>
-            <li><code>-W</code>, <code>--warndays</code> set the number of days of warning before a password change is required</li>
-          </ul>
-        <li>or, alternatively, <code>passwd -x 30 -n 2 -w 7</code>
-            <ul>
-              <li><code>passwd</code> change user password</li>
-              <li><code>-x</code>, <code>--maxdays</code> set the maximum number of days a password remains valid</li>
-              <li><code>-n</code>, <code>--mindays</code> set the minimum number of days between password changes</li>
-              <li><code>-w</code>, <code>--warndays</code> set the number of days of warning before a password change is required</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
   </ol>
-  ﹡ :warning: <i>see subject requirements</i>
-</details>
-  
-  </br>
-  
-  <div><p><b>Install pwquality</b></p></div>
-  <blockquote><i>What is pwquality?</i></blockquote>
-  <ol start="">
-    <li><code>sudo apt-get install libpam-pwquality</code></li>
+<p>﹡ :warning: <i>see subject requirements</i></p>
+
+</br>
+
+<div><p><b>Update password policy for already created user</b></p></div>
+  <ol start="4">
+    <ul>
+      <li>
+        <code>chage -M 30 -m 2 -W 7</code>
+        <ul>
+          <li><code>chage</code> change user password expiry information</li>
+          <li><code>-M</code>, <code>--maxdays</code> set the maximum number of days during which a password is valid</li>
+          <li><code>-m</code>, <code>--mindays</code> set the minimum number of days between password changes</li>
+          <li><code>-W</code>, <code>--warndays</code> set the number of days of warning before a password change is required</li>
+        </ul>
+      </li></br>
+      <li>
+        or, alternatively, <code>passwd -x 30 -n 2 -w 7</code>
+        <ul>
+           <li><code>passwd</code> change user password</li>
+           <li><code>-x</code>, <code>--maxdays</code> set the maximum number of days a password remains valid</li>
+           <li><code>-n</code>, <code>--mindays</code> set the minimum number of days between password changes</li>
+           <li><code>-w</code>, <code>--warndays</code> set the number of days of warning before a password change is required</li>
+         </ul>
+      </li>
+    </ul>
   </ol>
+  
+</br>
+  
+<div><p><b>Install pwquality</b></p></div>
+<blockquote><i>What is pwquality?</i></blockquote>
+<p><code>sudo apt-get install libpam-pwquality</code></p>
+</br>
 
-  </br>
-
-  <div><p><b>Configure pwquality</b></p></div>
-  <ol start="">
-    <li><code>sudo vim /etc/pam.d/common-password</code></li>
-    <li>
+<div><p><b>Configure pwquality</b></p></div>
+<ol start>
+  <li><code>sudo vim /etc/pam.d/common-password</code></li>
+  <li>
       Edit the <code>pam_pwquality.so</code> line, by adding</br><code>retry=3 minlen=10 ucredit=-1 dcredit=-1 lcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root</code> next to it
       <ul>
         <li><code>retry</code> number of retries</li>
@@ -634,9 +635,9 @@ ___
         <li><code>difok</code> the minimum number of characters that must be different from the old password</li>
         <li><code>enforce_for_root</code> implement password policy to root</li>
       </ul>
-    </li>
-    <li>Save and exit</li>
-  </ol>
+  </li>
+  <li>Save and exit</li>
+</ol>
 </details>
 
 ___
