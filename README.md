@@ -85,7 +85,7 @@ ___
     </ul>
   </li>
   <li>Click <code>Create</code></li>
-  <li>Head to <code>Settings</code>code> > <code>Storage</code>> > <code>Empty</code> > 💿 icon (<i>Attributes: Optical Drive</i>) > <code>Choose a disk file</code> > <code>Debian ISO</code> > <code>Ok</code></li>
+  <li>Head to <code>Settings</code> > <code>Storage</code> > <code>Empty</code> > 💿 icon (<i>Attributes: Optical Drive</i>) > <code>Choose a disk file</code> > <code>Debian ISO</code> > <code>Ok</code></li>
   <li><code>Start</code> the VM</li>
 </ol>
 
