@@ -413,18 +413,19 @@ ___
 </br>
 
 </details>
-<details open>
+<details>
   <summary><h3>3.4. Additional packages & bootloader · setup & installation</h3></summary>
   <ol>
-    <li>Accept confirmation message</li>
-    <li>Say <code>No</code> to additional packages</li>
-    <li>Select country</li>
-    <li>Set Debian archive mirror package manager: deb.debian.org</li>
-    <li>Leave HTTP proxy empty and click Continue</li>
-    <li>Say NO to the popularity contest</li>
-    <li>Remove all software options and press Continue</li>
-    <li>Say Yes to the installation of GRUB bootloader</li>
-    <li>Select device to install the bootloader: /dev/sda (ata_VBOX_HARDDISK)</li>
+    <li>(Confirmation message:) <code>Yes</code></li>
+    <li>Additional packages: <code>No</code></li>
+    <li>Country: <code>Portugal</code></li>
+    <li>Set Debian archive mirror package manager: <code>deb.debian.org</code></li>
+    <li>HTTP proxy: <code>(blank)</code></li>
+    <li><code>Continue</code></li>
+    <li>Popularity contest: <code>No</code></li>
+    <li>Remove all software options and <code>Continue</code></li>
+    <li>Installation of GRUB bootloader: <code>Yes</code></li>
+    <li>Select device to install the bootloader: <code>/dev/sda (ata_VBOX_HARDDISK)</code></li>
     <li><code>Continue</code></li>
   </ol>
 </details>
