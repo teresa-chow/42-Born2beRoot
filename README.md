@@ -155,7 +155,7 @@ ___
     - Continent: `Europe`
     - Country: `Portugal`
     - Locale: `United States`
-    - Keyboard: `American English`
+    - Keymap: `American English`
     - Hostname: `tchow-so42` ﹡
     - Domain name: `(blank)`
     - Set up root password ﹡
