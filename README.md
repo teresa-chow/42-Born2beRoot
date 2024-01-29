@@ -70,7 +70,7 @@ ___
 11. Select the size of the virtual hard disk
     - `33079636992 B` – to account for subject bonus requirements
 12. Click `Create`
-13. Head to `Settings` > `Storage` > `Empty` > 💿 icon (_Attributes: Optical Drive_) > `Choose a disk file` > `Debian ISO` > `Open` > `Ok`
+13. Head to `Settings` > `Storage` > `Empty` > 💿 icon (_Attributes: Optical Drive_) > `Choose a disk file` > `Debian ISO` > `Ok`
 14. `Start` the VM
 
 ___
