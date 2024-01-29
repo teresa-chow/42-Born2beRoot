@@ -227,7 +227,7 @@ ___
 ﹡ :warning: _see subject bonus requirements_
 </details>
 <details>
-  <summary><h3>3.3. Configuring Logical Volume Manager (LVM)</h3></summary>
+  <summary><h3>3.3. Logical Volume Manager (LVM) · configuration</h3></summary>
 <p>Write the changes to disks and configure LVM? <code>Yes</code></p>
 
 </br>
@@ -366,7 +366,7 @@ ___
 
 </details>
 <details open>
-  <summary><h3>3.4. Setting up additional packages & installing bootloader</h3></summary>
+  <summary><h3>3.4. Additional packages & bootloader · setup & installation</h3></summary>
   <ol>
     <li>Accept confirmation message</li>
     <li>Say <code>No</code> to additional packages</li>
@@ -568,7 +568,72 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.12. Password policy · setup & configuration</h3></summary>
+  <summary><h3>3.12. sudo policy & log · configuration</h3></summary>
+  <div><p><b>sudo policy</b></p></div>
+  <ol>
+    <li>
+      <code>sudo visudo</code>
+      <ul>
+        <li><code>visudo</code> edit the sudoers file</li>
+      </ul>
+    </li>
+    <li>
+      Add the following <code>Defaults</code> to the file
+      <ul>
+        <li>
+          <code>Defaults  passwd_tries=3</code>
+          <ul>
+            <li><code>passwd_tries</code> total ammount of tries for entering 'sudo' password</li>
+          </ul>
+        </li>
+        <li>
+          <code>Defaults  badpass_message="Wrong password bruh, try again:"</code>
+          <ul>
+            <li><code>badpass_message</code> message to be printed on wrong password scenario</li>
+          </ul>
+        </li>
+        <li>
+          <code>logfile="/var/log/sudo/sudo_config"</code>
+          <ul>
+            <li><code>logfile</code> set custom log file for 'sudo'</li>
+          </ul>
+        </li>
+        <li>
+          <code>log_input, log_output</code>
+          <ul>
+            <li><code>log_input, log_output</code> what will be logged</li>
+          </ul>
+        </li>
+        <li>
+          <code>iolog_dir="/var/log/sudo"</code>
+          <ul>
+            <li><code>iolog_dir</code> path where I/O logs will be stored</li>
+          </ul>
+        </li>
+        <li>
+          <code>requiretty</code>
+          <ul>
+            <li><code>requiretty</code> enables 'sudo' invocation from a real TTY but not through methods such as 'cron' or 'cgi-bin'</li>
+          </ul>
+        </li>
+        <li>
+          <code>secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"</code>
+          <ul>
+            <li><code>secure_path</code> the path used for every command run with 'sudo'</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ol></br>
+  <div><p><b>sudo log</b></p></div>
+  <ol>
+    <li><code>mkdir /var/log/sudo</code> create a directory named 'sudo' that will store the system's sudo log</li>
+    <li><code>cd /var/log/sudo && touch sudo.log</code> go inside chosen directory and create 'sudo.log' file</li>
+  </ol>
+</details>
+
+<details>
+  <summary><h3>3.13. Password policy · setup & configuration</h3></summary>
     <div><p><b>Configure shadow password suite</b></p></div>
   <ol>
     <li><code>sudo vim /etc/login.defs</code></li>
@@ -639,70 +704,6 @@ ___
 </ol>
 </details>
 
-<details open>
-  <summary><h3>3.13. sudo policy & log · configuration</h3></summary>
-  <div><p><b>sudo policy</b></p></div>
-  <ol>
-    <li>
-      <code>sudo visudo</code>
-      <ul>
-        <li><code>visudo</code> edit the sudoers file</li>
-      </ul>
-    </li>
-    <li>
-      Add the following <code>Defaults</code> to the file
-      <ul>
-        <li>
-          <code>Defaults  passwd_tries=3</code>
-          <ul>
-            <li><code>passwd_tries</code> total ammount of tries for entering 'sudo' password</li>
-          </ul>
-        </li>
-        <li>
-          <code>Defaults  badpass_message="Wrong password bruh, try again:"</code>
-          <ul>
-            <li><code>badpass_message</code> message to be printed on wrong password scenario</li>
-          </ul>
-        </li>
-        <li>
-          <code>logfile="/var/log/sudo/sudo_config"</code>
-          <ul>
-            <li><code>logfile</code> set custom log file for 'sudo'</li>
-          </ul>
-        </li>
-        <li>
-          <code>log_input, log_output</code>
-          <ul>
-            <li><code>log_input, log_output</code> what will be logged</li>
-          </ul>
-        </li>
-        <li>
-          <code>iolog_dir="/var/log/sudo"</code>
-          <ul>
-            <li><code>iolog_dir</code> path where I/O logs will be stored</li>
-          </ul>
-        </li>
-        <li>
-          <code>requiretty</code>
-          <ul>
-            <li><code>requiretty</code> enables 'sudo' invocation from a real TTY but not through methods such as 'cron' or 'cgi-bin'</li>
-          </ul>
-        </li>
-        <li>
-          <code>secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"</code>
-          <ul>
-            <li><code>secure_path</code> the path used for every command run with 'sudo'</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ol></br>
-  <div><p><b>sudo log</b></p></div>
-  <ol>
-    <li><code>mkdir /var/log/sudo</code> create a directory named 'sudo' that will store the system's sudo log</li>
-    <li><code>cd /var/log/sudo && touch sudo.log</code> go inside chosen directory and create 'sudo.log' file</li>
-  </ol>
-</details>
 
 ___
 
