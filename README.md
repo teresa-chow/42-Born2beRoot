@@ -26,15 +26,15 @@ ___
     <td>:x: Unintended server sprawl</td>
   </tr>
   <tr>
-    <td>:heavy_check_mark: <b>Lowered downtime:</b> if backup and redundancy mechanisms are in place, since VMs are portable and easy to move from one hypervisor to another on a different machine</td>
-    <td>:x: <b>Single point of failure:</b>  unless backup and redundancy mechanisms are in place, if the host computer fails, all VMs running on that machine will also fail</td>
+    <td>:heavy_check_mark: <b>Lowered downtime:</b> ifackup and redundancy mechanisms are in place, since VMs are portable and easy to move from one hypervisor to another on a different machine</td>
+    <td>:x: <b>Single point of failure:</b>  unlessackup and redundancy mechanisms are in place, if the host computer fails, all VMs running on that machine will also fail</td>
   </tr>
   <tr>
     <td>:heavy_check_mark: Scalability</td>
     <td>:x: Hardware limitations</td>
   </tr>
   <tr>
-    <td>:heavy_check_mark: <b>Security benefits:</b> ability to run apps of questionable security, study computer viruses, while protecting host OS</td>
+    <td>:heavy_check_mark: <b>Securityenefits:</b> ability to run apps of questionable security, study computer viruses, while protecting host OS</td>
     <td>:x: <b>Security risks:</b> if VMs are not properly isolated from each other or/and from the host machine, virtualization can introduce additional security risks</td>
   </tr>
     <tr>
@@ -46,32 +46,50 @@ ___
 
 </br>
 
-### :warning: Pre-requisites
-
-- have [VirtualBox](https://www.virtualbox.org/) installed;
-- have [the ISO (Optical Disc Image) installer file for the Debian GNU/Linux OS](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/) downloaded.
+<h3>:warning: Pre-requisites</h3>
+<ul>
+  <li>have [VirtualBox](https://www.virtualbox.org/) installed;</li>
+  <li>have [the ISO (Optical Disc Image) installer file for the Debian GNU/Linux OS](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/) downloaded.</li>
+</ul>
 
 ___
 
-### Steps
+<h3>Steps</h3>
+<ol>
+  <li>Open <code>VirtualBox</code></li>
+  <li>Click <code>New</code></li>
+  <li>Name the VM</li>
+  <li>
+    Choose destination folder for the VM
+    <ul>
+      <li><code>/sgoinfre/</code> in this case</li>
+    </ul>
+  </li>
+  <li>Type: <code>Linux</code></li>
+  <li>Version: <code>Debian (64-bit)</code></li>
+  <li>
+    Select the amount of memory (RAM) toe allocated to the VM
+    <ul>
+      <li>set as default – the recommended memory size is <code>1024 MB</code></li>
+    </ul>
+  </li>
+  <li>Create a virtual hard disk now</li>
+  <li>Choose <code>VDI</code> (VirtualBox Disk Image) as the type of file to use for the new virtual hard disk</li>
+  <li>Choose storage on physical hard disk aseing <code>dynamically allocated</code></li>
+  <li>
+    Select the size of the virtual hard disk
+    <ul>
+      <li>
+        <code>30.8 GB</code> to account for subject bonus requirements</br>
+      </li>
+    </ul>
+  </li>
+  <li>Click <code>Create</code></li>
+  <li>Head to <code>Settings</code>code> > <code>Storage</code>> > <code>Empty</code> > 💿 icon (<i>Attributes: Optical Drive</i>) > <code>Choose a disk file</code> > <code>Debian ISO</code> > <code>Ok</code></li>
+  <li><code>Start</code> the VM</li>
+</ol>
 
-1. Open `VirtualBox`
-2. Click `New`
-3. Name the VM
-4. Choose destination folder for the VM
-    - `/sgoinfre/` in this case
-5. Type: `Linux`
-6. Version: `Debian (64-bit)`
-7. Select the amount of memory (RAM) to be allocated to the VM
-    - set as default – the recommended memory size is `1024 MB`
-8. Create a virtual hard disk now
-9. Choose `VDI` (VirtualBox Disk Image) as the type of file to use for the new virtual hard disk
-10. Choose storage on physical hard disk as being `dynamically allocated`
-11. Select the size of the virtual hard disk
-    - `33079636992 B` – to account for subject bonus requirements
-12. Click `Create`
-13. Head to `Settings` > `Storage` > `Empty` > 💿 icon (_Attributes: Optical Drive_) > `Choose a disk file` > `Debian ISO` > `Ok`
-14. `Start` the VM
+</br>
 
 ___
 
@@ -188,7 +206,19 @@ ___
     <ol>
       <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
       <li>How to use this free space: <code>Create a new partition</code></li>
-      <li>Enter new partition size in Bytes: <code>525336576 B</code>﹡</li>
+      <li>
+        Enter new partition size in Bytes: <code>525336576 B</code>﹡</br>
+        <blockquote>
+          1 B × 1024 = <b>1 KB</b></br>
+          1 KB × 1024 = <b>1 MB</b> (1024 × 1024)</br>
+          1 MB × 1024 = <b>1 GB</b> (1024 × 1024 × 1024)</br>
+          </br></br>
+          500 MB = 524 288 000 B</br>
+          + 2048 × 512 (1 048 576B)</br>
+          ❔ or + 4096<sup>a</sup> × 256<sup>b</sup> (1 048 576B)</br>
+          ❔ <sup>a</sup> – block size in B; <sup>b</sup> – inode size in B (see reserved block size)
+        </blockquote>
+      </li>
       <li>New partition type: <code>Primary</code></li>
       <li>Location for the new partition: <code>Beginning</code></li>
       <li>Mount point for this partition: <code>/boot</code></li>
@@ -254,45 +284,58 @@ ___
   <li>Select the volume group where the new logical volume should be created: <code>LVMGroup</code></li>
   <li>Enter logical volume name</li>
   <li>Enter the size of the new logical volume</li>
-  <li>Repeat the steps above for each of the following volumes:</li>
-</ol>
-
+  <li>Repeat the steps above for each of the following volumes:</br>
 <table>
 <tr>
   <th><b>Logical volume name</b></th>
   <th><b>Logical volume size</b></th>
+  <th><b>Conversion / Calculation</b></th>
+  <th><b>Logical volume size in Bytes</b></th>
 </tr>
 <tr>
   <td><code>root</code></td>
+  <td>10G</td>
+  <td>10 × 1024 × 1024 × 1024</td>
   <td>10737418240 B</td>
 </tr>
 <tr>
   <td><code>swap</code></td>
+  <td>2.3G</td>
+  <td>2.3 × 1024 × 1024 × 1024 (2469606195.2 B)</td>
   <td>2465607424 B</td>
 </tr>
 <tr>
   <td><code>home</code></td>
+  <td>5G</td>
+  <td>5 × 1024 × 1024 × 1024</td>
   <td>5368709120 B</td>
 </tr>
 <tr>
   <td><code>var</code></td>
+  <td>3G</td>
+  <td>3 × 1024 × 1024 × 1024</td>
   <td>3221225472 B</td>
 </tr>
 <tr>
   <td><code>srv</code></td>
+  <td>3G</td>
+  <td>3 × 1024 × 1024 × 1024</td>
   <td>3221225472 B</td>
 </tr>
 <tr>
   <td><code>tmp</code></td>
+  <td>3G</td>
+  <td>3 × 1024 × 1024 × 1024</td>
   <td>3221225472 B</td>
 </tr>
 <tr>
   <td><code>var-log</code></td>
+  <td>4G</td>
+  <td>4 × 1024 × 1024 × 1024</td>
   <td>4294967296 B</td>
 </tr>
 </table>
-
-<ol start = "12">
+</li>
   <li>LVM configuration action: <code>Finish</code></li>
 </ol>
 
@@ -304,8 +347,7 @@ ___
   <li>Partition settings > set Use as:</li>
   <li>Set mount point</li>
   <li><code>Done setting up the partition</code></li>
-  <li>Repeat the steps above for each of the following volumes:</li>
-</ol>
+  <li>Repeat the steps above for each of the following volumes:</br>
 <table>
   <tr>
     <th><b>Partition</b></th>
@@ -364,8 +406,7 @@ ___
     <td><code>/var/log</code></td>
   </tr>
 </table>
-
-<ol start="18">
+<blockquote><b>Ext4</b> (fourth extended file system) is arguably the most stable and well tested file system supported in Linux.</blockquote></li>
  <li><code>Finish partitioning and write changes to disk</code></li>
 </ol>
 
