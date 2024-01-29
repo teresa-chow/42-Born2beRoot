@@ -211,7 +211,7 @@ ___
 </details>
 </details>
 <details>
-  <summary><h3>3.2. Encrypt Volumes</h3></summary>
+  <summary><h3>3.2. Encrypting Volumes</h3></summary>
   <ol>
     <li><code>Configure encrypted volumes</code></li>
     <li>Write the changes to disk and configure encrypted volumes? <code>Yes</code></li>
@@ -227,7 +227,7 @@ ___
 ﹡ :warning: _see subject bonus requirements_
 </details>
 <details>
-  <summary><h3>3.3. Configure Logical Volume Manager (LVM)</h3></summary>
+  <summary><h3>3.3. Configuring Logical Volume Manager (LVM)</h3></summary>
 <p>Write the changes to disks and configure LVM? <code>Yes</code></p>
 
 </br>
@@ -365,22 +365,23 @@ ___
 </br>
 
 </details>
-
-<--! TO DO: FRAME THE FOLLOWING STEPS
- Accept confirmation message;
- Say NO to additional packages;
- Select country;
- Set Debian archive mirror package manager: deb.debian.org;
- Leave HTTP proxy empty and click Continue;
- Say NO to the popularity contest;
- Remove all software options and press Continue;
- Say Yes to the installation of GRUB boot loader;
- Select device to install the bootloader: /dev/sda (ata_VBOX_HARDDISK);
- Select Continue;
--->
+<details open>
+  <summary><h3>3.4. Setting up additional packages & installing bootloader</h3></summary>
+  <ol>
+    <li>Accept confirmation message</li>
+    <li>Say <code>No</code> to additional packages</li>
+    <li>Select country</li>
+    <li>Set Debian archive mirror package manager: deb.debian.org</li>
+    <li>Leave HTTP proxy empty and click Continue</li>
+    <li>Say NO to the popularity contest</li>
+    <li>Remove all software options and press Continue</li>
+    <li>Say Yes to the installation of GRUB bootloader</li>
+    <li>Select device to install the bootloader: /dev/sda (ata_VBOX_HARDDISK)</li>
+    <li><code>Continue</code></li>
+  </ol>
 
 <details>
-  <summary><h3>3.4. Login into the System</h3></summary>
+  <summary><h3>3.5. Login into the System</h3></summary>
   <ol>
     <li>Enter encryption password</li>
     <li>Enter user</li>
@@ -388,7 +389,7 @@ ___
   </ol>
 </details>
 <details>
-  <summary><h3>3.5. sudo · installation & configuration</h3></summary>
+  <summary><h3>3.6. sudo · installation & configuration</h3></summary>
   <blockquote><i>sudo allows a permitted user to execute a command as the superuser or another user, as specified by the security policy</i></blockquote>
 
   </br>
@@ -449,13 +450,13 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.6. Vim · installation</h3></summary>
+  <summary><h3>3.7. Vim · installation</h3></summary>
   <blockquote><i>Vi Improved (Vim) is a highly configurable text editor built to make creating and changing any kind of text very efficient; it is upwards compatible to Vi</i></blockquote>
   <code>sudo apt install vim</code>
 </details>
 
 <details>
-  <summary><h3>3.7. Groups and Users · creation & configuration</h3></summary>
+  <summary><h3>3.8. Groups and Users · creation & configuration</h3></summary>
 <ul>
   <li><code>sudo groupadd &ltgroupname&gt</code> create a group with specified &ltgroupname&gt</li>
   <li><code>vim /etc/passwd</code> open the file where one can check existing users (if not 'sudo', this file is read-only)</li>
@@ -479,7 +480,7 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.8. Secure Shell (SSH) · installation & configuration</h3></summary>
+  <summary><h3>3.9. Secure Shell (SSH) · installation & configuration</h3></summary>
   <ol>
     <li><code>sudo apt install openssh-server</code></li>
     <li><code>sudo vim /etc/ssh/sshd_config</code></li>
@@ -494,7 +495,7 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.9. Uncomplicated Firewall (UFW) · installation & configuration</h3></summary>
+  <summary><h3>3.10. Uncomplicated Firewall (UFW) · installation & configuration</h3></summary>
     <ol>
       <li><code>sudo apt-get install ufw</code></li>
       <li><code>sudo ufw enable</code></li>
@@ -505,7 +506,7 @@ ___
 </details>
     
 <details>
-  <summary><h3>3.10. SSH · connection to a physical machine</h3></summary>
+  <summary><h3>3.11. SSH · connection to a physical machine</h3></summary>
 </br><div><p><b>VirtualBox interface</b></p></div>
 <ol>
   <li>Go to <code>VirtualBox</code></li>
@@ -567,7 +568,7 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.11. Password policy · setup & configuration</h3></summary>
+  <summary><h3>3.12. Password policy · setup & configuration</h3></summary>
     <div><p><b>Configure shadow password suite</b></p></div>
   <ol>
     <li><code>sudo vim /etc/login.defs</code></li>
@@ -639,9 +640,12 @@ ___
 </details>
 
 <details open>
-  <summary><h3>3.12. sudo policies & log · configuration</h3></summary>
+  <summary><h3>3.13. sudo policies & log · configuration</h3></summary>
+  <div><p><b>sudo policies</b></p></div>
+    <div><p><b>sudo log</b></p></div>
   <ol>
-    <li><code>mkdir /var/log/sudo</code></li>
+    <li><code>mkdir /var/log/sudo</code> create a directory named 'sudo' that will store the system's sudo log</li>
+    <li><code>cd /var/log/sudo && touch sudo.log</code> go inside chosen directory and create 'sudo.log' file</li>
   </ol>
 </details>
 
