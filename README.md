@@ -638,6 +638,13 @@ ___
 </ol>
 </details>
 
+<details open>
+  <summary><h3>3.12. sudo policies & log · configuration</h3></summary>
+  <ol>
+    <li><code>mkdir /var/log/sudo</code></li>
+  </ol>
+</details>
+
 ___
 
 </br>
