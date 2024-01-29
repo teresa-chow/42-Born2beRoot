@@ -379,6 +379,7 @@ ___
     <li>Select device to install the bootloader: /dev/sda (ata_VBOX_HARDDISK)</li>
     <li><code>Continue</code></li>
   </ol>
+</details>
 
 <details>
   <summary><h3>3.5. Login into the System</h3></summary>
@@ -703,12 +704,7 @@ ___
   <li>Save and exit</li>
 </ol>
 </details>
-
-
-___
-
-</br>
-
+<hr></br>
 </details>
 
 <details open>
