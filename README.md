@@ -239,6 +239,7 @@ ___
 <ol>
   <li><code>Create volume group</code></li>
   <li>Enter volume group name: <code>LVMGroup</code></li>
+  <li>Select partition to store the group: <code>/dev/mapper/sda5_crypt</code></li>
 </ol>
 
 </br>
