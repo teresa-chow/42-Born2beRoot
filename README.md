@@ -410,8 +410,6 @@ ___
  <li>(Confirmation message:) <code>Yes</code></li>
 </ol>
 
-</br>
-
 </details>
 <details>
   <summary><h3>3.4. Additional packages & bootloader · setup & installation</h3></summary>
