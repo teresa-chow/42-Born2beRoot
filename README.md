@@ -407,6 +407,7 @@ ___
 </table>
 <blockquote><b>Ext4</b> (fourth extended file system) is arguably the most stable and well tested file system supported in Linux.</blockquote></li>
  <li><code>Finish partitioning and write changes to disk</code></li>
+  <li>Write changes to disk? <code>Yes</code></li>
 </ol>
 
 </br>
