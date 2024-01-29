@@ -60,16 +60,18 @@ ___
 3. Name the VM
 4. Choose destination folder for the VM
     - `/sgoinfre/` in this case
-5. Select the amount of memory (RAM) to be allocated to the VM
+5. Type: `Linux`
+6. Version: `Debian (64-bit)`
+7. Select the amount of memory (RAM) to be allocated to the VM
     - set as default – the recommended memory size is `1024 MB`
-6. Create a virtual hard disk
-7. Choose `VDI` (VirtualBox Disk Image) as the type of file to use for the new virtual hard disk
-8. Choose storage on physical hard disk as being `dynamically allocated`
-9. Select the size of the virtual hard disk
+8. Create a virtual hard disk now
+9. Choose `VDI` (VirtualBox Disk Image) as the type of file to use for the new virtual hard disk
+10. Choose storage on physical hard disk as being `dynamically allocated`
+11. Select the size of the virtual hard disk
     - `33079636992 B` – to account for subject bonus requirements
-10. Click `Create`
-11. Head to `Settings` > `Storage` > `Empty` > 💿 icon (_Attributes: Optical Drive_) > `Choose a disk file` > `Debian ISO` > `Open` > `Ok`
-12. `Start` the VM
+12. Click `Create`
+13. Head to `Settings` > `Storage` > `Empty` > 💿 icon (_Attributes: Optical Drive_) > `Choose a disk file` > `Debian ISO` > `Open` > `Ok`
+14. `Start` the VM
 
 ___
 
@@ -719,6 +721,8 @@ ___
 
 ## References
 
+Linux man pages
+
 [debian website](https://www.debian.org/) accessed 23 Jan. 2024
 
 [Rocky Linux website](https://rockylinux.org/) accessed 23 Jan. 2024
@@ -730,8 +734,6 @@ ___
 [@rphlr](https://github.com/rphlr)'s [42-born2beroot](https://github.com/rphlr/42-born2beroot/) accessed 25 Jan. 2024
 
 [sudo](sudo.ws) accessed 25 Jan. 2024
-
-Linux man pages
 
 </br>
 
