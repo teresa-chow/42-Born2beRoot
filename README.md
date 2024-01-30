@@ -571,7 +571,7 @@ ___
     <code>hostname -I</code> check IP address
     <ul>
       <li><code>hostname</code> show or set the system's host name</li>
-      <li><code>-I</code>, <code>--ip-address</code> display the IP address(es) of the host</li>
+      <li><code>-I</code>, <code>--all-ip-addresses</code> display the IP address(es) of the host</li>
     </ul>
   </li>
   <li>Execute <code>sudo vim /etc/network/interfaces</code></li>
