@@ -663,7 +663,7 @@ ___
           </ul>
         </li>
         <li>
-          <code>secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"</code>
+          <code>Defaults  secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"</code>
           <ul>
             <li><code>secure_path</code> the path used for every command run with 'sudo'</li>
           </ul>
