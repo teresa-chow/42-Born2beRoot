@@ -505,7 +505,6 @@ ___
   <summary><h3>3.8. Groups and Users · creation & configuration</h3></summary>
 <ul>
   <li><code>sudo groupadd &ltgroupname&gt</code> create a group with specified &ltgroupname&gt</li>
-  <li><code>sudo adduser &ltusername&gt</code> create a user with specified &ltusername&gt</li>
   <li><code>sudo usermod -aG &ltgroupname&gt &ltusername&gt</code> add user to group</li>
   <li><code>getent group</code> check groups</li>
   <li><code>getent group &ltgroupname&gt</code>check group users</li>
