@@ -233,13 +233,11 @@ ___
     <ol>
       <li>Select a partition to modify its settings: <code>FREE SPACE</code></li>
       <li>How to use this free space: <code>Create a new partition</code></li>
-      <li>Set new partition size to <code>max</code>, in Bytes: <code>32554300416 B</code>﹡</li>
+      <li>Set new partition size to <code>max</code></li>
       <li>New partition type: <code>Logical</code></li>
       <li>Mount point for this partition: <code>Do not mount it</code></li>
       <li>Partition settings: <code>Done setting up the partition</code></li>
     </ol>
-
-﹡ :warning: _see subject bonus requirements_
 </details>
 </details>
 <details>
