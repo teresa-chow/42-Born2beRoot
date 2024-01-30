@@ -506,8 +506,12 @@ ___
 <ul>
   <li><code>sudo groupadd &ltgroupname&gt</code> create a group with specified &ltgroupname&gt</li>
   <li><code>sudo usermod -aG &ltgroupname&gt &ltusername&gt</code> add user to group</li>
-  <li><code>getent group</code> check groups</li>
-  <li><code>getent group &ltgroupname&gt</code>check group users</li>
+  <li>
+    <code>getent group &ltgroupname&gt</code>check group users
+    <ul>
+      <li><code>getent group</code> check groups</li>
+    </ul>
+  </li>
 </ul>
 
 </br>
