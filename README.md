@@ -489,7 +489,8 @@ ___
       <ul><code>-G</code>, <code>--groups</code> a list of supplementary groups which the user is also a member of</ul>
     </li>
     <li><code>visudo</code> edit the sudoers file</li>
-    <li> Add <code>&ltusername&gt ALL=(ALL) ALL</code> under <code>#User Privilege</code> section</li>
+    <li>Add <code>&ltusername&gt ALL=(ALL) ALL</code> under <code>#User Privilege</code> section</li>
+    <li>Save and close</li>
     <li><code>reboot</code></li>
   </ol>
 </details>
