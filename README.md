@@ -558,7 +558,7 @@ ___
   <li>Go to <code>VirtualBox</code></li>
   <li>Select chosen VM</li>
   <li>Go to <code>Settings</code> > <code>Network</code></li>
-  <li>Attach to <code>Bridge adapter</code></li>
+  <li>Attached to <code>Bridged Adapter</code></li>
 </ol>
   
 </br>
