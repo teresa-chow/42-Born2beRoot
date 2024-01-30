@@ -435,18 +435,11 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.6. Vim · installation</h3></summary>
-  <blockquote><i>Vi Improved (Vim) is a highly configurable text editor built to make creating and changing any kind of text very efficient; it is upwards compatible to Vi</i></blockquote>
-  <code>sudo apt install vim</code>
-</details>
-
-<details>
-  <summary><h3>3.7. sudo · installation & configuration</h3></summary>
+  <summary><h3>3.6. sudo · installation</h3></summary>
   <blockquote><i>sudo allows a permitted user to execute a command as the superuser or another user, as specified by the security policy</i></blockquote>
 
   </br>
   
-  <div><p><b>Installation</b></p></div>
   <ol>
     <li>
       <code>su --login</code>
@@ -484,10 +477,16 @@ ___
       </ul>
     </li>
   </ol>
+</details>
 
-  </br>
+<details>
+  <summary><h3>3.7. Vim · installation</h3></summary>
+  <blockquote><i>Vi Improved (Vim) is a highly configurable text editor built to make creating and changing any kind of text very efficient; it is upwards compatible to Vi</i></blockquote>
+  <code>sudo apt install vim</code>
+</details>
 
-  <div><p><b>Configuration</b></p></div>
+<details>
+  <summary><h3>3.8. sudo · configuration</h3></summary>
   <ol>
     <li>
       <code>usermod -aG sudo &ltusername&gt</code>
@@ -502,7 +501,7 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.8. Groups and Users · creation & configuration</h3></summary>
+  <summary><h3>3.9. Groups and Users · creation & configuration</h3></summary>
 <ul>
   <li><code>sudo groupadd &ltgroupname&gt</code> create a group with specified &ltgroupname&gt</li>
   <li><code>vim /etc/passwd</code> open the file where one can check existing users (if not 'sudo', this file is read-only)</li>
@@ -526,7 +525,7 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.9. Secure Shell (SSH) · installation & configuration</h3></summary>
+  <summary><h3>3.10. Secure Shell (SSH) · installation & configuration</h3></summary>
   <ol>
     <li><code>sudo apt install openssh-server</code></li>
     <li><code>sudo vim /etc/ssh/sshd_config</code></li>
@@ -541,7 +540,7 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.10. Uncomplicated Firewall (UFW) · installation & configuration</h3></summary>
+  <summary><h3>3.11. Uncomplicated Firewall (UFW) · installation & configuration</h3></summary>
     <ol>
       <li><code>sudo apt-get install ufw</code></li>
       <li><code>sudo ufw enable</code></li>
@@ -552,7 +551,7 @@ ___
 </details>
     
 <details>
-  <summary><h3>3.11. SSH · connection to a physical machine</h3></summary>
+  <summary><h3>3.12. SSH · connection to a physical machine</h3></summary>
 </br><div><p><b>VirtualBox interface</b></p></div>
 <ol>
   <li>Go to <code>VirtualBox</code></li>
@@ -614,7 +613,7 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.12. sudo policy & log · configuration</h3></summary>
+  <summary><h3>3.13. sudo policy & log · configuration</h3></summary>
   <div><p><b>sudo policy</b></p></div>
   <ol>
     <li>
@@ -679,7 +678,7 @@ ___
 </details>
 
 <details>
-  <summary><h3>3.13. Password policy · setup & configuration</h3></summary>
+  <summary><h3>3.14. Password policy · setup & configuration</h3></summary>
     <div><p><b>Configure shadow password suite</b></p></div>
   <ol>
     <li><code>sudo vim /etc/login.defs</code></li>
