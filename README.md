@@ -214,9 +214,8 @@ ___
           1 MB × 1024 = <b>1 GB</b> (1024 × 1024 × 1024)</br>
           </br></br>
           500 MB = 524 288 000 B</br>
-          + 2048 × 512 (1 048 576B)</br>
-          ❔ or + 4096<sup>a</sup> × 256<sup>b</sup> (1 048 576B)</br>
-          ❔ <sup>a</sup> – block size in B; <sup>b</sup> – inode size in B (see reserved block size)
+          + 2048 × 512 (1 048 576B)<sup>a</sup></br>
+          <sup>a</sup> – <i>note to future self: check boot sector size, disk sector size,... (?)</i>
         </blockquote>
       </li>
       <li>New partition type: <code>Primary</code></li>
