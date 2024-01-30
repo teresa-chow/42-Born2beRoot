@@ -259,7 +259,7 @@ ___
   <summary><h3>3.3. Logical Volume Manager (LVM) · configuration</h3></summary>
 <ol>
   <li><code>Configure Logical Volume Manager</code></li>
-  <li>Write the changes to disks and configure LVM? <code>Yes</code></li>
+  <li>(Confirmation message:) <code>Yes</code></li>
 </ol>
 
 </br>
