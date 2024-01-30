@@ -433,8 +433,15 @@ ___
     <li>Enter user password</li>
   </ol>
 </details>
+
 <details>
-  <summary><h3>3.6. sudo · installation & configuration</h3></summary>
+  <summary><h3>3.6. Vim · installation</h3></summary>
+  <blockquote><i>Vi Improved (Vim) is a highly configurable text editor built to make creating and changing any kind of text very efficient; it is upwards compatible to Vi</i></blockquote>
+  <code>sudo apt install vim</code>
+</details>
+
+<details>
+  <summary><h3>3.7. sudo · installation & configuration</h3></summary>
   <blockquote><i>sudo allows a permitted user to execute a command as the superuser or another user, as specified by the security policy</i></blockquote>
 
   </br>
@@ -492,12 +499,6 @@ ___
     <li> Add <code>&ltusername&gt ALL=(ALL) ALL</code> under <code>#User Privilege</code> section</li>
     <li><code>reboot</code></li>
   </ol>
-</details>
-
-<details>
-  <summary><h3>3.7. Vim · installation</h3></summary>
-  <blockquote><i>Vi Improved (Vim) is a highly configurable text editor built to make creating and changing any kind of text very efficient; it is upwards compatible to Vi</i></blockquote>
-  <code>sudo apt install vim</code>
 </details>
 
 <details>
