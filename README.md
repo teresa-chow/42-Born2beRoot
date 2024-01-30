@@ -513,18 +513,6 @@ ___
     </ul>
   </li>
 </ul>
-
-</br>
-
-:warning: <code>sudo reboot</code> and verify 'sudo' powers:
-<ul>
-  <li>
-    <code>sudo -v</code>
-    <ul>
-      <li><code>-v</code>, <code>--validate</code> update the user's cached credentials, authenticating the user if necessary</li>
-    </ul>
-  </li>
-</ul>
 </details>
 
 <details>
