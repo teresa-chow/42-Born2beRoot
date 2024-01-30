@@ -633,31 +633,31 @@ ___
           </ul>
         </li>
         <li>
-          <code>Defaults  badpass_message="Wrong password bruh, try again:"</code>
+          <code>Defaults  badpass_message="Wrong password. Try again:"</code>
           <ul>
             <li><code>badpass_message</code> message to be printed on wrong password scenario</li>
           </ul>
         </li>
         <li>
-          <code>logfile="/var/log/sudo/sudo_config"</code>
+          <code>Defaults  logfile="/var/log/sudo/sudo_config"</code>
           <ul>
             <li><code>logfile</code> set custom log file for 'sudo'</li>
           </ul>
         </li>
         <li>
-          <code>log_input, log_output</code>
+          <code>Defaults  log_input, log_output</code>
           <ul>
             <li><code>log_input, log_output</code> what will be logged</li>
           </ul>
         </li>
         <li>
-          <code>iolog_dir="/var/log/sudo"</code>
+          <code>Defaults  iolog_dir="/var/log/sudo"</code>
           <ul>
             <li><code>iolog_dir</code> path where I/O logs will be stored</li>
           </ul>
         </li>
         <li>
-          <code>requiretty</code>
+          <code>Defaults  requiretty</code>
           <ul>
             <li><code>requiretty</code> enables 'sudo' invocation from a real TTY but not through methods such as 'cron' or 'cgi-bin'</li>
           </ul>
