@@ -662,8 +662,16 @@ ___
     </li>
   </ol></br>
   <div><p><b>sudo log</b></p></div>
-  <code>cd /var/log/sudo && touch sudo.log</code> go inside chosen directory and create 'sudo.log' file</li>
-  :warning: this seems to be already created (check steps)
+  <ul>
+    <li>
+      Check if there's already a 'sudo' directory in the following path: <code>/var/log/</code>
+      <ol>
+        <li><code>cd /var/log/</code></li>
+        <li><code>ls</code></li>
+      </ol>
+    </li>
+    <li>else, <code>mkdir /var/log/sudo</code></li>
+  </ul>
 </details>
 
 <details>
