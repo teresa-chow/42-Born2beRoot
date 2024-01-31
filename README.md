@@ -714,7 +714,7 @@ ___
 </br>
   
 <div><p><b>Install pwquality</b></p></div>
-<blockquote><i>What is pwquality?</i></blockquote>
+<blockquote><i>pwquality is a PAM module to perform password quality checking</i></blockquote>
 <p><code>sudo apt-get install libpam-pwquality</code></p>
 </br>
 
