@@ -663,6 +663,7 @@ ___
   </ol></br>
   <div><p><b>sudo log</b></p></div>
   <code>cd /var/log/sudo && touch sudo.log</code> go inside chosen directory and create 'sudo.log' file</li>
+  :warning: this seems to be already created (check steps)
 </details>
 
 <details>
