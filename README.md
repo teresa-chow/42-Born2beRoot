@@ -670,7 +670,7 @@ ___
         <li><code>ls</code></li>
       </ol>
     </li>
-    <li>else, <code>mkdir /var/log/sudo</code></li>
+    <li>Else, <code>mkdir /var/log/sudo</code></li>
   </ul>
 </details>
 
