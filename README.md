@@ -662,10 +662,7 @@ ___
     </li>
   </ol></br>
   <div><p><b>sudo log</b></p></div>
-  <ol>
-    <li><code>mkdir /var/log/sudo</code> create a directory named 'sudo' that will store the system's sudo log</li>
-    <li><code>cd /var/log/sudo && touch sudo.log</code> go inside chosen directory and create 'sudo.log' file</li>
-  </ol>
+  <code>cd /var/log/sudo && touch sudo.log</code> go inside chosen directory and create 'sudo.log' file</li>
 </details>
 
 <details>
