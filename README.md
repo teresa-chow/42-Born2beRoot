@@ -665,10 +665,9 @@ ___
   <ul>
     <li>
       Check if there's already a 'sudo' directory in the following path: <code>/var/log/</code>
-      <ol>
-        <li><code>cd /var/log/</code></li>
-        <li><code>ls</code></li>
-      </ol>
+      <ul>
+        <li><code>cd /var/log/ && ls</code></li>
+      </ul>
     </li>
     <li>Else, <code>mkdir /var/log/sudo</code></li>
   </ul>
