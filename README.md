@@ -749,10 +749,10 @@ ___
 
 <details open>
   <summary><h2>4. Monitoring script</h2></summary>
-  <blockquote><i>Crontab stands for crontable, and consists of a list of commands that are to be run on a regular schedule</i></blockquote>
   <ol>
     <li>
       Check whether Crontab is installed
+      <blockquote><i>Crontab stands for crontable, and consists of a list of commands that are to be run on a regular schedule</i></blockquote>
       <ul>
         <li><code>ls /var/spool/cron/</code> should display <code>crontabs</code>, since that is where crontab files are stored</li>
       </ul>
