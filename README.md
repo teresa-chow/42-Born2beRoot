@@ -758,7 +758,7 @@ ___
       </ul>
     </li>
     <li><code>cd /usr/local/bin/</code> this is the default installation location when a user builds and installs an executable application independently</li>
-    <li><code>sudo touch monitoring.sh</code> create 'monitoring.sh' file</li>
+    <li><code>sudo vim monitoring.sh</code> create and edit 'monitoring.sh' file</li>
 </ol>
 </details>
 
