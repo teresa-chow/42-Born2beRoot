@@ -753,6 +753,8 @@ ___
         <li><a href="./monitoring_scripts/monitoring.sh">monitoring.sh</a></li>
       </ul>
     </li>
+    <li><code>sudo visudo</code> open sudoers config file</li>
+    <li>add the following line: <code>&ltusername&gt        ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh</code>, that will allow 'monitoring.sh' to run when the user's session starts</li>
 </ol>
 </details>
 
@@ -765,7 +767,7 @@ ___
 ## References
 
 Linux man pages
-
+your_
 [debian website](https://www.debian.org/) accessed 23 Jan. 2024
 
 [Rocky Linux website](https://rockylinux.org/) accessed 23 Jan. 2024
