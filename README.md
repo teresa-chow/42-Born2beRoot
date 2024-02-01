@@ -605,7 +605,6 @@ ___
 
 <details>
   <summary><h3>3.12. sudo policy & log · configuration</h3></summary>
-  <div><p><b>sudo policy</b></p></div>
   <ol>
     <li>
       <code>sudo visudo</code>
@@ -629,7 +628,7 @@ ___
           </ul>
         </li>
         <li>
-          <code>Defaults  logfile="/var/log/sudo/sudo_config"</code>
+          <code>Defaults  logfile="/var/log/sudo/sudo.log"</code>
           <ul>
             <li><code>logfile</code> set custom log file for 'sudo'</li>
           </ul>
@@ -660,17 +659,7 @@ ___
         </li>
       </ul>
     </li>
-  </ol></br>
-  <div><p><b>sudo log</b></p></div>
-  <ul>
-    <li>
-      Check if there's already a 'sudo' directory in the following path: <code>/var/log/</code>
-      <ul>
-        <li><code>ls /var/log/</code></li>
-      </ul>
-    </li>
-    <li>Else, <code>mkdir /var/log/sudo</code></li>
-  </ul>
+  </ol>
 </details>
 
 <details>
