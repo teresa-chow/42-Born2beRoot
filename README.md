@@ -640,12 +640,6 @@ ___
           </ul>
         </li>
         <li>
-          <code>Defaults  iolog_dir="/var/log/sudo"</code>
-          <ul>
-            <li><code>iolog_dir</code> path where I/O logs will be stored</li>
-          </ul>
-        </li>
-        <li>
           <code>Defaults  requiretty</code>
           <ul>
             <li><code>requiretty</code> enables 'sudo' invocation from a real TTY but not through methods such as 'cron' or 'cgi-bin'</li>
