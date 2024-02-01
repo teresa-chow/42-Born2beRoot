@@ -747,7 +747,12 @@ ___
       </ul>
     </li>
     <li><code>cd /usr/local/bin/</code> this is the default installation location when a user builds and installs an executable application independently</li>
-    <li><code>sudo vim monitoring.sh</code> create and edit 'monitoring.sh' file</li>
+    <li>
+      <code>sudo vim monitoring.sh</code> create and edit 'monitoring.sh' file
+      <ul>
+        <li><a href="./monitoring_scripts/monitoring.sh">monitoring.sh</a></li>
+      </ul>
+    </li>
 </ol>
 </details>
 
