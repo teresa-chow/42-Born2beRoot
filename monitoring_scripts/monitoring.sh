@@ -40,14 +40,14 @@ echo ">>> Server Monitor <<<"
 
 # Broadcast message to all users
 wall "	#Architecture: $arch
-	      #CPU physical : $cpu_cores
-	      #vCPU : $cpu_threads
-	      #Memory Usage: $used_ram/${max_ram}MB (${perc_ram}%)
-	      #Disk Usage: $used_disk/${max_disk}Gb (${perc_disk}%)
-	      #CPU load: $cpu_load%
-	      #Last boot: $last_boot
-	      #LVM use: $lvm
-	      #Connections TCP : $tcp ESTABLISHED
-	      #User log: $users
-	      #Network: IP $ip($MAC)
-	      #Sudo : $sudo cmd"
+	#CPU physical : $cpu_cores
+	#vCPU : $cpu_threads
+	#Memory Usage: $used_ram/${max_ram}MB (${perc_ram}%)
+	#Disk Usage: $used_disk/${max_disk}Gb (${perc_disk}%)
+	#CPU load: $cpu_load%
+	#Last boot: $last_boot
+	#LVM use: $lvm
+	#Connections TCP : $tcp ESTABLISHED
+	#User log: $users
+	#Network: IP $ip($MAC)
+	#Sudo : $sudo cmd"
