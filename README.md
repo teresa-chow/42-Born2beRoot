@@ -761,8 +761,8 @@ ___
 </br>
   <div><p><b>Crontab</b></p></div>
   <ol start="8">
-    <li><code>sudo crontab -u root -e</code></li>
-    <li><code>*/10 * * * * /usr/local/bin/monitoring.sh</code></li>
+    <li><code>sudo crontab -u root -e</code> open crontab config file</li>
+    <li>Add the following line to the end of the file: <code>*/10 * * * * /usr/local/bin/monitoring.sh</code></li>
   </ol>
 </details>
 
