@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Display banner
-echo ">>> Server Monitor <<<"
-
 # Get system info
   architecture=$(uname -a)
 # CPU
