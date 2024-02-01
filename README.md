@@ -738,10 +738,11 @@ ___
 
 <details open>
   <summary><h2>4. Monitoring script</h2></summary>
+  <div><p><b>Crontab</b></p></div>
+  <blockquote><i>Crontab stands for crontable, and consists of a list of commands that are to be run on a regular schedule</i></blockquote>
   <ol>
     <li>
       Check whether Crontab is installed
-      <blockquote><i>Crontab stands for crontable, and consists of a list of commands that are to be run on a regular schedule</i></blockquote>
       <ul>
         <li><code>ls /var/spool/cron/</code> should display <code>crontabs</code>, since that is where crontab files are stored</li>
       </ul>
@@ -761,7 +762,7 @@ ___
     <li>Add the following line: <code>&ltusername&gt        ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh</code>, that will allow 'monitoring.sh' to run when the user's session starts</li>
     <li>Save and exit</li>
     <li><code>sudo reboot</code></li>
-    <li><code>sudo /usr/local/bin/monitoring.sh</code> -- not working</li>
+    <li><code>sudo sh /usr/local/bin/monitoring.sh</code></li>
   </ol>
 </br>
   <div><p><b>Crontab</b></p></div>
