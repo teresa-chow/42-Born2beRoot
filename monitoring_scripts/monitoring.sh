@@ -39,7 +39,7 @@ echo ">>> Server Monitor <<<"
   sudo=$(journalctl _COMM=sudo | grep COMMAND | wc -l)
 
 # Broadcast message to all users
-wall "	#Architecture: $arch
+echo "	#Architecture: $arch
 	#CPU physical : $cpu_cores
 	#vCPU : $cpu_threads
 	#Memory Usage: $used_ram/${max_ram}MB (${perc_ram}%)
@@ -50,4 +50,4 @@ wall "	#Architecture: $arch
 	#Connections TCP : $tcp ESTABLISHED
 	#User log: $users
 	#Network: IP $ip($MAC)
-	#Sudo : $sudo cmd"
+	#Sudo : $sudo cmd" | wall
