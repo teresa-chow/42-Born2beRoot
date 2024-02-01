@@ -762,7 +762,17 @@ ___
   <div><p><b>Crontab</b></p></div>
   <ol start="9">
     <li><code>sudo crontab -u root -e</code> open crontab config file</li>
-    <li>Add the following line to the end of the file: <code>*/10 * * * * /usr/local/bin/monitoring.sh</code></li>
+    <li>Add the following line to the end of the file: <code>*/10 * * * * sh /usr/local/bin/sleep.sh; sh /usr/local/bin/monitoring.sh</code>, where:
+      <ul>
+        <li><code>*/10 * * * * /usr/local/bin/monitoring.sh</code> is a script to execute 'monitoring.sh' every 10 minutes</li>
+        <li>
+          while making crontab run 'sleep.sh' makes it precise to the minute, delaying monitoring dump
+          <ul>
+            <li><a href="./monitoring_scripts/sleep.sh">sleep.sh</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ol>
 </details>
 
