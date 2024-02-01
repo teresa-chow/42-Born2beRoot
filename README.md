@@ -760,7 +760,7 @@ ___
     </li>
     <li><code>sudo chmod 744 monitoring.sh sleep.sh</code></li>
     <li><code>sudo visudo</code> open sudoers config file</li>
-    <li>Add the following lines, that will allow corresponding scripts to run when the user's session starts</br>
+    <li>Add the following lines, that will allow corresponding scripts to run when the user's session starts:</br>
       <code>&ltusername&gt        ALL=(ALL) NOPASSWD: /usr/local/bin/sleep.sh</code></br>
       <code>&ltusername&gt        ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh</code></li>
     <li>Save and exit</li>
