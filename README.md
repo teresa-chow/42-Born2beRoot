@@ -746,6 +746,10 @@ ___
         <li><code>ls /var/spool/cron/</code> should display <code>crontabs</code>, since that is where crontab files are stored</li>
       </ul>
     </li>
+  </ol>
+</br>
+<div><p><b>monitoring.sh</b></p></div>
+    <ol start="2">
     <li><code>cd /usr/local/bin/</code> this is the default installation location when a user builds and installs an executable application independently</li>
     <li>
       <code>sudo vim monitoring.sh</code> create and edit 'monitoring.sh' file
