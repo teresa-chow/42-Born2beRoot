@@ -752,24 +752,28 @@ ___
         <li><a href="./monitoring_scripts/monitoring.sh">monitoring.sh</a></li>
       </ul>
     </li>
+    <li>
+      <code>sudo vim sleep.sh</code> create and edit 'sleep.sh' file
+      <ul>
+        <li><a href="./monitoring_scripts/sleep.sh">sleep.sh</a></li>
+      </ul>
+    </li>
+    <li><code>sudo chmod 744 monitoring.sh sleep.sh</code></li>
     <li><code>sudo visudo</code> open sudoers config file</li>
     <li>Add the following line: <code>&ltusername&gt        ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh</code>, that will allow 'monitoring.sh' to run when the user's session starts</li>
     <li>Save and exit</li>
     <li><code>sudo reboot</code></li>
-    <li><code>sudo sh /usr/local/bin/monitoring.sh</code></li>
+    <li><code>sudo /usr/local/bin/monitoring.sh</code></li>
   </ol>
 </br>
   <div><p><b>Crontab</b></p></div>
-  <ol start="9">
+  <ol start="11">
     <li><code>sudo crontab -u root -e</code> open crontab config file</li>
-    <li>Add the following line to the end of the file: </br><code>*/10 * * * * sh /usr/local/bin/sleep.sh; sh /usr/local/bin/monitoring.sh</code>, where:
+    <li>Add the following line to the end of the file: </br><code>*/10 * * * * /usr/local/bin/sleep.sh; /usr/local/bin/monitoring.sh</code>, where:
       <ul>
-        <li><code>*/10 * * * * sh /usr/local/bin/monitoring.sh</code> is a script to execute 'monitoring.sh' every 10 minutes</li>
+        <li><code>*/10 * * * * /usr/local/bin/monitoring.sh</code> is a script to execute 'monitoring.sh' every 10 minutes</li>
         <li>
-          while making crontab run 'sleep.sh' <code>sh /usr/local/bin/sleep.sh</code> makes it precise to the minute, delaying monitoring dump
-          <ul>
-            <li><a href="./monitoring_scripts/sleep.sh">sleep.sh</a></li>
-          </ul>
+          while making crontab run 'sleep.sh' <code>/usr/local/bin/sleep.sh</code> makes it precise to the minute, delaying monitoring dump
         </li>
       </ul>
     </li>
