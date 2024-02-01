@@ -755,7 +755,9 @@ ___
     </li>
     <li><code>sudo visudo</code> open sudoers config file</li>
     <li>add the following line: <code>&ltusername&gt        ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh</code>, that will allow 'monitoring.sh' to run when the user's session starts</li>
-</ol>
+    <li><code>sudo reboot</code></li>
+    <li><code>sudo /usr/local/bin/monitoring.sh</code></li> -- not working
+  </ol>
 </details>
 
 </br>
