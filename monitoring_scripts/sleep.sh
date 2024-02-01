@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sleep $(who -b | awk '{ split($4, time, ":"); print time[2]%10 }')m
+time=$(($(uptime -s | cut -d ':' -f 2 ) % 10 * 60 + $(uptime -s | cut -d ':' -f 3)))
+sleep $time
