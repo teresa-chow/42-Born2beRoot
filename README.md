@@ -754,13 +754,14 @@ ___
       </ul>
     </li>
     <li><code>sudo visudo</code> open sudoers config file</li>
-    <li>add the following line: <code>&ltusername&gt        ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh</code>, that will allow 'monitoring.sh' to run when the user's session starts</li>
+    <li>Add the following line: <code>&ltusername&gt        ALL=(ALL) NOPASSWD: /usr/local/bin/monitoring.sh</code>, that will allow 'monitoring.sh' to run when the user's session starts</li>
+    <li>Save and exit</li>
     <li><code>sudo reboot</code></li>
     <li><code>sudo /usr/local/bin/monitoring.sh</code> -- not working</li>
   </ol>
 </br>
   <div><p><b>Crontab</b></p></div>
-  <ol start="8">
+  <ol start="9">
     <li><code>sudo crontab -u root -e</code> open crontab config file</li>
     <li>Add the following line to the end of the file: <code>*/10 * * * * /usr/local/bin/monitoring.sh</code></li>
   </ol>
