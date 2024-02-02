@@ -726,11 +726,11 @@ ___
   </li>
   <li>Save and exit</li>
 </ol>
-</details>
 <hr></br>
 </details>
+</details>
 
-<details open>
+<details>
   <summary><h2>4. Monitoring script</h2></summary>
   <div><p><b>Crontab</b></p></div>
   <blockquote><i>Crontab stands for crontable, and consists of a list of commands that are to be run on a regular schedule</i></blockquote>
@@ -772,6 +772,16 @@ ___
   <ol start="11">
     <li><code>sudo crontab -u root -e</code> open crontab config file</li>
     <li>Add the following line to the end of the file: </br><code>*/10 * * * * /usr/local/bin/sleep.sh; /usr/local/bin/monitoring.sh</code>,</br>to sequencially run  'sleep.sh' and 'monitoring.sh' every 10 minutes</li>
+  </ol>
+<hr></br>
+</details>
+
+<details open>
+  <summary><h2>5. WordPress · website setup</h2></summary>
+  <div><p><b>Lighttpd</b></p></div>
+  <blockquote><i>Lighttpd</i></blockquote>
+  <ol>
+    <li></li>
   </ol>
 </details>
 
