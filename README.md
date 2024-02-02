@@ -603,7 +603,7 @@ ___
     <div><code>ssh &ltVMusername&gt@&ltVM_ipaddress&gt -p 4242</code></div>
   </li>
   <li>
-    <code>exit</code> to close the connection
+    <code>logout</code> to terminate an SSH session, or, alternatively, <code>exit</code> to close the connection
   </li>
 </ol>
 </details>
