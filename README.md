@@ -777,6 +777,7 @@ ___
   <ol start="11">
     <li><code>sudo crontab -u root -e</code> open crontab config file</li>
     <li>Add the following line to the end of the file: </br><code>*/10 * * * * /usr/local/bin/sleep.sh; /usr/local/bin/monitoring.sh</code>,</br>to sequencially run  'sleep.sh' and 'monitoring.sh' every 10 minutes</li>
+    <li><code>sudo crontab -u root -l</code> view the list of scheduled cron jobs for the root user</li>
   </ol>
 <hr></br>
 </details>
