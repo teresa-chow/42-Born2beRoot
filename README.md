@@ -778,11 +778,37 @@ ___
 
 <details open>
   <summary><h2>5. WordPress · website setup</h2></summary>
-  <div><p><b>Lighttpd</b></p></div>
-  <blockquote><i>Lighttpd</i></blockquote>
-  <ol>
-    <li></li>
-  </ol>
+  <details open>
+    <summary><h3>5.1. Lighttpd</h3></summary>
+    <blockquote><i>Lighttpd</i></blockquote>
+    <ol>
+      <li></li>
+    </ol>
+  </details>
+
+  <details open>
+    <summary><h3>5.2. WordPress</h3></summary>
+    <blockquote><i>WordPress</i></blockquote>
+    <ol>
+      <li></li>
+    </ol>
+  </details>
+  
+  <details open>
+    <summary><h3>5.3. MariaDB</h3></summary>
+    <blockquote><i>MariaDB</i></blockquote>
+    <ol>
+      <li></li>
+    </ol>
+  </details>
+
+  <details open>
+    <summary><h3>5.4. PHP</h3></summary>
+    <blockquote><i>PHP</i></blockquote>
+    <ol>
+      <li></li>
+    </ol>
+  </details>
 </details>
 
 </br>
