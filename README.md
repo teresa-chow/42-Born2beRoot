@@ -779,10 +779,13 @@ ___
 <details open>
   <summary><h2>5. WordPress · website setup</h2></summary>
   <details open>
-    <summary><h3>5.1. Lighttpd</h3></summary>
+    <summary><h3>5.1. Lighttpd · installation and setup</h3></summary>
     <blockquote><i>Lighttpd</i></blockquote>
     <ol>
-      <li></li>
+      <li><code>sudo apt install lighttpd</code></li>
+      <li><code>dpkg -l | grep lighttpd</code></li>
+      <li><code>sudo ufw allow 80</code></li>
+      <li><code>sudo ufw status</code></li>
     </ol>
   </details>
 
