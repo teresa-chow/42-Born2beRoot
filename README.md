@@ -784,7 +784,7 @@ ___
 ## References
 
 Linux man pages
-your_
+
 [debian website](https://www.debian.org/) accessed 23 Jan. 2024
 
 [Rocky Linux website](https://rockylinux.org/) accessed 23 Jan. 2024
