@@ -520,7 +520,12 @@ ___
   <ol>
     <li><code>sudo apt install openssh-server</code></li>
     <li><code>sudo vim /etc/ssh/sshd_config</code></li>
-    <li>edit the text, replacing <code># Port 22</code> by <code>Port 4242</code> ﹡</li>
+    <li>edit the text, replacing
+      <ul>
+        <li><code># Port 22</code> with <code>Port 4242</code> ﹡</li>
+        <li>and <code>#PermitRootLogin prohibit-password</code> with <code>PermitRootLogin no</code> to prohibit SSH login as root, regardless of authentication mechanism</li>
+      </ul>
+    </li>
     <li><code>sudo vim /etc/ssh/ssh_config</code></li>
     <li>edit the text, replacing <code># Port 22</code> by <code>Port 4242</code> ﹡</li>
     <li><code>sudo service ssh restart</code></li>
