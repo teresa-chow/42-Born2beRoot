@@ -819,7 +819,10 @@ ___
         </ul>
       </li>
       <li><code>sudo mariadb</code> access the MariaDB console</li>
-      <li><code>CREATE DATABASE &ltdatabase-name&gt ;</code> access the MariaDB console</li>
+      <li><code>CREATE DATABASE &ltdatabase-name&gt ;</code></li>
+      <li><code>GRANT ALL ON &ltdatabase-name&gt.* TO '&ltusername-2&gt'@'localhost' IDENTIFIED BY '&ltpassword-2&gt' WITH GRANT OPTION;</code> create a new database user and grant them full privileges on the database</li>
+      <li><code>FLUSH PRIVILEGES;</code> apply changes and reload privileges</li>
+      <li><code>exit</code> exit MariaDB shell</li>
     </ol>
   </details>
 
