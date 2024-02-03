@@ -784,7 +784,7 @@ ___
 
 <details open>
   <summary><h2>5. WordPress · website setup</h2></summary>
-  <details open>
+  <details>
     <summary><h3>5.1. Lighttpd · installation and setup</h3></summary>
     <blockquote><i>Lighttpd (pronounced /lighty/) is a web server that has been optimized for high-performance environments</i></blockquote>
     <ol>
@@ -800,7 +800,7 @@ ___
     </ol>
   </details>
 
-  <details open>
+  <details>
     <summary><h3>5.2. MariaDB</h3></summary>
     <blockquote><i>MariaDB is an open-source relational database</i></blockquote>
     <ol>
