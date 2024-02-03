@@ -504,10 +504,10 @@ ___
 <details>
   <summary><h3>3.8. Groups and Users · creation & configuration</h3></summary>
 <ul>
-  <li><code>sudo groupadd &ltgroupname&gt</code> create a group with specified &ltgroupname&gt</li>
-  <li><code>sudo usermod -aG &ltgroupname&gt &ltusername&gt</code> add user to group</li>
+  <li><code>sudo groupadd &ltgroup-name&gt</code> create a group with specified &ltgroup-name&gt</li>
+  <li><code>sudo usermod -aG &ltgroup-name&gt &ltusername&gt</code> add user to group</li>
   <li>
-    <code>getent group &ltgroupname&gt</code>check group users
+    <code>getent group &ltgroup-name&gt</code>check group users
     <ul>
       <li><code>getent group</code> check groups</li>
     </ul>
@@ -588,7 +588,7 @@ ___
       </li>
       <li>
       Add
-      <div><code>address &ltipaddress&gt</code></br><code>netmask 255.255.0.0</code></br><code>gateway 10.11.254.254</code></br><code>dns 10.11.254.254</code></div>
+      <div><code>address &ltip-address&gt</code></br><code>netmask 255.255.0.0</code></br><code>gateway 10.11.254.254</code></br><code>dns 10.11.254.254</code></div>
     </li>
     </ul>
   </li>
@@ -600,7 +600,7 @@ ___
 <ol start="10">
   <li>
     Open terminal on physical machine and execute
-    <div><code>ssh &ltVMusername&gt@&ltVM_ipaddress&gt -p 4242</code></div>
+    <div><code>ssh &ltVM-username&gt@&ltVM-ip-address&gt -p 4242</code></div>
   </li>
   <li>
     <code>logout</code> to terminate an SSH session, or, alternatively, <code>exit</code> to close the connection
@@ -807,7 +807,7 @@ ___
       <li><code>sudo apt install mariadb-server</code></li>
       <li><code>dpkg -l | grep mariadb-server</code></li>
       <li>
-        <code>sudo mysql_secure_installation</code>
+        <code>sudo mysql_secure_installation</code> launch the interactive script for removing insecure default settings
         <ul>
           <li>Enter current password for root (enter for none): <code>Enter</code> – :warning: <i>do not confuse database root with system root</i></li>
           <li>Switch to unix_socket authentification [Y/n] <code>n</code></li>
@@ -818,6 +818,8 @@ ___
           <li>Reload privilege tables now? [Y/n] <code>Y</code></li>
         </ul>
       </li>
+      <li><code>sudo mariadb</code> access the MariaDB console</li>
+      <li><code>CREATE DATABASE &ltdatabase-name&gt ;</code> access the MariaDB console</li>
     </ol>
   </details>
 
