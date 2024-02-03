@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get system info
-  architecture=$(uname -a)
+  arch=$(uname -a)
 # CPU
   cpu_cores=$(grep 'core id' /proc/cpuinfo | wc -l)
   cpu_threads=$(grep 'processor' /proc/cpuinfo | wc -l)
