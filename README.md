@@ -786,11 +786,16 @@ ___
   <summary><h2>5. WordPress · website setup</h2></summary>
   <details open>
     <summary><h3>5.1. Lighttpd · installation and setup</h3></summary>
-    <blockquote><i>Lighttpd lighttpd (pronounced /lighty/) is a secure, fast, compliant, and very flexible web server that has been optimized for high-performance environments</i></blockquote>
+    <blockquote><i>Lighttpd (pronounced /lighty/) is a secure, fast, compliant, and very flexible web server that has been optimized for high-performance environments</i></blockquote>
     <ol>
       <li><code>sudo apt install lighttpd</code></li>
       <li><code>dpkg -l | grep lighttpd</code></li>
-      <li><code>sudo ufw allow 80</code></li>
+      <li>
+        <code>sudo ufw allow 80</code>
+        <ul>
+          <li><code>port 80</code> is the port number assigned to commonly used internet communication protocol, Hypertext Transfer Protocol (HTTP); it is the default network port used to send and receive unencrypted web pages</li>
+        </ul>
+      </li>
       <li><code>sudo ufw status</code></li>
     </ol>
   </details>
