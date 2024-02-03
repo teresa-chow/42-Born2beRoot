@@ -824,6 +824,18 @@ ___
       <li><code>FLUSH PRIVILEGES;</code> apply changes and reload privileges</li>
       <li><code>exit</code> exit MariaDB shell</li>
     </ol>
+  </br>
+  <div><p><b>Check</b></p></div>
+  <ul>
+    <li>
+      <code>mariadb -u &ltusername-2&gt -p</code> confirm whether the database user was successfully created
+      <ul>
+        <li>Enter password: <code>&ltpassword-2&gt</code></li>
+      </ul>
+    </li>
+    <li><code>SHOW DATABASES;</code> check whether the database user has access to the database</li>
+    <li><code>exit</code></li>
+  </ul>
   </details>
 
   <details open>
