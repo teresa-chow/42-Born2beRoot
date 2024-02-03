@@ -884,6 +884,10 @@ ___
   </details>
 </details>
 
+<details open>
+  <summary><h2>6. File Transfer Protocol (FTP)</h2></summary>
+  <blockquote><i>FTP is a standard communication protocol used for the transfer of computer files from a server to a client on a computer network</i></blockquote>
+
 </br>
 
 ___
