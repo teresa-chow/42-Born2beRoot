@@ -793,7 +793,7 @@ ___
       <li>
         <code>sudo ufw allow 80</code>
         <ul>
-          <li><code>port 80</code> is the port number assigned to commonly used internet communication protocol, Hypertext Transfer Protocol (HTTP); it is the default network port used to send and receive unencrypted web pages</li>
+          <li><code>Port 80</code> is the port number assigned to commonly used internet communication protocol, Hypertext Transfer Protocol (HTTP); it is the default network port used to send and receive unencrypted web pages</li>
         </ul>
       </li>
       <li><code>sudo ufw status</code></li>
@@ -887,7 +887,9 @@ ___
 <details open>
   <summary><h2>6. File Transfer Protocol (FTP)</h2></summary>
   <blockquote><i>FTP is a standard communication protocol used for the transfer of computer files from a server to a client on a computer network</i></blockquote>
-
+        <ul>
+          <li><code>Port 21</code> is the Transmission Control Protocol (TCP) port number value conventionally assigned to FTP control (command); a second one, Port 20, is assigned to FTP data transfer</li>
+        </ul>
 </br>
 
 ___
