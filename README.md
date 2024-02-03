@@ -851,7 +851,19 @@ ___
     <summary><h3>5.4. WordPress · installation and configuration</h3></summary>
     <blockquote><i>WordPress is an open-source content management system</i></blockquote>
     <ol>
-      <li></li>
+      <li><code>sudo apt install wget</code></li>
+      <li><code>sudo wget http://wordpress.org/latest.tar.gz -P /var/www/html</code></li>
+      <li><code>sudo tar -xzvf /var/www/html/latest.tar.gz</code></li>
+      <li><code>sudo rm /var/www/html/latest.tar.gz</code></li>
+      <li><code>sudo cp -r wordpress/* /var/www/html</code></li>
+      <li><code>sudo rm -rf wordpress</code></li>
+      <li><code>sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php</code></li>
+      <li>
+        <code>sudo vim /var/www/html/wp-config.php</code>
+        <ul>
+          <li></li>
+        </ul>
+      </li>
     </ol>
   </details>
 
