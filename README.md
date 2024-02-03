@@ -838,7 +838,7 @@ ___
   </ul>
   </details>
 
-  <details open>
+  <details>
     <summary><h3>5.3. PHP · installation</h3></summary>
     <blockquote><i>PHP is a general-purpose scripting language that is especially suited to web development</i></blockquote>
     <ol>
