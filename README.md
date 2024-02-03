@@ -189,7 +189,7 @@ ___
 
 </details>
 
-<details open>
+<details>
   <summary><h2>3. VM · setup</h2></summary>
 
 <details>
