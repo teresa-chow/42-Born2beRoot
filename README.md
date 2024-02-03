@@ -786,7 +786,7 @@ ___
   <summary><h2>5. WordPress · website setup</h2></summary>
   <details open>
     <summary><h3>5.1. Lighttpd · installation and setup</h3></summary>
-    <blockquote><i>Lighttpd</i></blockquote>
+    <blockquote><i>Lighttpd lighttpd (pronounced /lighty/) is a secure, fast, compliant, and very flexible web server that has been optimized for high-performance environments</i></blockquote>
     <ol>
       <li><code>sudo apt install lighttpd</code></li>
       <li><code>dpkg -l | grep lighttpd</code></li>
