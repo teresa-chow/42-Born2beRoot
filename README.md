@@ -848,7 +848,7 @@ ___
   </details>
 
   <details open>
-    <summary><h3>5.4. WordPress · installation and configuration</h3></summary>
+    <summary><h3>5.4. WordPress · download and configuration</h3></summary>
     <blockquote><i>WordPress is an open-source content management system</i></blockquote>
     <ol>
       <li><code>sudo apt install wget</code></li>
@@ -870,10 +870,18 @@ ___
   <details open>
     <summary><h3>5.5. Lighttpd · configuration</h3></summary>
     <ol>
+      <li><code>sudo lighty-enable-mod fastcgi</code></li>
+      <li><code>sudo lighty-enable-mod fastcgi-php</code></li>
+      <li><code>sudo service lighttpd force-reload</code></li>
+    </ol>
+  </details>
+
+  <details open>
+    <summary><h3>5.6. WordPress · installation</h3></summary>
+    <ol>
       <li></li>
     </ol>
   </details>
-  
 </details>
 
 </br>
