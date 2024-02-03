@@ -27,7 +27,7 @@ ___
   </tr>
   <tr>
     <td>:heavy_check_mark: <b>Lowered downtime:</b> ifackup and redundancy mechanisms are in place, since VMs are portable and easy to move from one hypervisor to another on a different machine</td>
-    <td>:x: <b>Single point of failure:</b>  unlessackup and redundancy mechanisms are in place, if the host computer fails, all VMs running on that machine will also fail</td>
+    <td>:x: <b>Single point of failure:</b>  unless backup and redundancy mechanisms are in place, if the host computer fails, all VMs running on that machine will also fail</td>
   </tr>
   <tr>
     <td>:heavy_check_mark: Scalability</td>
