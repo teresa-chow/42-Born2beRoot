@@ -887,9 +887,17 @@ ___
 <details open>
   <summary><h2>6. File Transfer Protocol (FTP)</h2></summary>
   <blockquote><i>FTP is a standard communication protocol used for the transfer of computer files from a server to a client on a computer network</i></blockquote>
+<ol>
+  <li><code>sudo apt install vsftpd</code></li>
+  <li><code>dpkg -l | grep vsftpd</code></li>
+  <li><code>sudo ufw allow 21</code>
         <ul>
-          <li><code>Port 21</code> is the Transmission Control Protocol (TCP) port number value conventionally assigned to FTP control (command); a second one, Port 20, is assigned to FTP data transfer</li>
+          <li><code>Port 21</code> is the Transmission Control Protocol (TCP) port number value conventionally assigned to FTP control (command)</li>
+          <li><code>Port 20</code> is assigned to FTP data transfer</li>
         </ul>
+  </li>
+  <li><code>sudo vim /etc/vsftpd.conf</code></li>
+</ol>
 </br>
 
 ___
