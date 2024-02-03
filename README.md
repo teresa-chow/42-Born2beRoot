@@ -786,7 +786,7 @@ ___
   <summary><h2>5. WordPress · website setup</h2></summary>
   <details open>
     <summary><h3>5.1. Lighttpd · installation and setup</h3></summary>
-    <blockquote><i>Lighttpd (pronounced /lighty/) is a secure, fast, compliant, and very flexible web server that has been optimized for high-performance environments</i></blockquote>
+    <blockquote><i>Lighttpd (pronounced /lighty/) is a web server that has been optimized for high-performance environments</i></blockquote>
     <ol>
       <li><code>sudo apt install lighttpd</code></li>
       <li><code>dpkg -l | grep lighttpd</code></li>
@@ -801,20 +801,35 @@ ___
   </details>
 
   <details open>
+    <summary><h3>5.2. MariaDB</h3></summary>
+    <blockquote><i>MariaDB is an open-source relational database</i></blockquote>
+    <ol>
+      <li><code>sudo apt install mariadb-server</code></li>
+      <li><code>dpkg -l | grep mariadb-server</code></li>
+      <li>
+        <code>sudo mysql_secure_installation</code>
+        <ul>
+          <li>Enter current password for root (enter for none): <code>Enter</code> – :warning: <i>do not confuse database root with system root</i></li>
+          <li>Switch to unix_socket authentification [Y/n] <code>n</code></li>
+          <li>Change root password? [Y/n] <code>n</code></li>
+          <li>Remove anonymous users? [Y/n] <code>Y</code></li>
+          <li>Disallow root login remotely? [Y/n] <code>Y</code></li>
+          <li>Remove test database and access to it? [Y/n] <code>Y</code></li>
+          <li>Reload privilege tables now? [Y/n] <code>Y</code></li>
+        </ul>
+      </li>
+    </ol>
+  </details>
+
+  <details open>
     <summary><h3>5.2. WordPress</h3></summary>
-    <blockquote><i>WordPress</i></blockquote>
+    <blockquote><i>WordPress is an open-source content management system</i></blockquote>
     <ol>
       <li></li>
     </ol>
   </details>
   
-  <details open>
-    <summary><h3>5.3. MariaDB</h3></summary>
-    <blockquote><i>MariaDB</i></blockquote>
-    <ol>
-      <li></li>
-    </ol>
-  </details>
+
 
   <details open>
     <summary><h3>5.4. PHP</h3></summary>
