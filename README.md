@@ -842,7 +842,8 @@ ___
     <summary><h3>5.3. PHP · installation</h3></summary>
     <blockquote><i>PHP is a general-purpose scripting language that is especially suited to web development</i></blockquote>
     <ol>
-      <li></li>
+      <li><code>sudo apt install php-cgi php-mysql</code></li>
+      <li><code>dpkg -l | grep php</code></li>
     </ol>
   </details>
 
