@@ -680,7 +680,7 @@ ___
 <div><p><b>Update password policy for already created user</b></p></div>
     <ul>
      <li>
-        <code>chage -M 30 -m 2 -W 7</code>
+        <code>chage -M 30 -m 2 -W 7 &ltusername&gt</code>
       <ul>
         <li><code>chage</code> change user password expiry information</li>
         <li><code>-M</code>, <code>--maxdays</code> set the maximum number of days during which a password is valid</li>
@@ -689,7 +689,7 @@ ___
       </ul>
      </li></br>
      <li>
-        or, alternatively, <code>passwd -x 30 -n 2 -w 7</code>
+        or, alternatively, <code>passwd -x 30 -n 2 -w 7 &ltusername&gt</code>
        <ul>
           <li><code>passwd</code> change user password</li>
           <li><code>-x</code>, <code>--maxdays</code> set the maximum number of days a password remains valid</li>
