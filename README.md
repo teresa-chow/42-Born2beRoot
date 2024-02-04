@@ -870,6 +870,7 @@ ___
           </li>
         </ul>
       </li>
+      <li>Save and exit</li>
     </ol>
   </details>
 
