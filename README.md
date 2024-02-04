@@ -427,9 +427,9 @@ ___
 <details>
   <summary><h3>3.5. Login into the System</h3></summary>
   <ol>
-    <li>Enter encryption password</li>
-    <li>Enter user</li>
-    <li>Enter user password</li>
+    <li>Enter <code>&ltencryption-password&gt</code></li>
+    <li>Enter <code>&ltusername&gt</code></li>
+    <li>Enter <code>&ltuser-password&gt</code></li>
   </ol>
 </details>
 
