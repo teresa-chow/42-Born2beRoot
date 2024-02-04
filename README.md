@@ -861,7 +861,13 @@ ___
       <li>
         <code>sudo vim /var/www/html/wp-config.php</code>
         <ul>
-          <li></li>
+          <li> Fill in the following fields with specified information
+            <ul>
+              <li>define( 'DB_NAME', '<code>&ltdatabase-name&gt</code>' );</li>
+              <li>define( 'DB_USER', '<code>&ltusername-2&gt</code>' );</li>
+              <li>define( 'DB_PASSWORD', '<code>&ltpassword-2&gt</code>' );</li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ol>
