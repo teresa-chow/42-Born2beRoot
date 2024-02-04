@@ -174,11 +174,11 @@ ___
     - Country: `Portugal`
     - Locale: `United States`
     - Keymap: `American English`
-    - Hostname: `tchow-so42` ﹡
+    - Hostname: `<username>42` ﹡
     - Domain name: `(blank)`
     - Set up root password ﹡
-    - User full name: `tchow-so` ﹡
-    - Username: `tchow-so` ﹡
+    - User full name: `<username>` ﹡
+    - Username: `<username>` ﹡
     - Set up user password ﹡
     - Clock: `Lisbon`
 
