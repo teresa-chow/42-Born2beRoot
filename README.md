@@ -544,7 +544,7 @@ ___
       <li><code>sudo ufw status numbered</code></li>
     </ol>
 
-</br><div><p><b>Allow incoming traffic</b></p></div>
+</br><div><p><b>Port forwarding</b></p></div>
   <ol start="5">
     <li>Go to <code>VirtualBox</code> interface</li>
     <li>Select chosen VM</li>
@@ -803,6 +803,22 @@ ___
       </li>
       <li><code>sudo ufw status</code></li>
     </ol>
+
+  </br><div><p><b>Port forwarding</b></p></div>
+  <ol start="5">
+    <li>Go to <code>VirtualBox</code> interface</li>
+    <li>Select chosen VM</li>
+    <li>
+      Go to <code>Settings</code> → <code>Network</code> → <code>Adapter 1</code> → <code>Advanced</code> → <code>Port Forwarding</code> → <code>+</code>
+      <ul>
+        <li>Name: <code>UFW</code></li>
+        <li>Protocol: <code>TCP</code></li>
+        <li>Host Port: <code>80</code></li>
+        <li>Guest Port: <code>80</code></li>
+      </ul>
+      → <code>Ok</code> → <code>Ok</code>
+    </li>
+  </ol>
   </details>
 
   <details>
