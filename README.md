@@ -540,24 +540,28 @@ ___
     <ol>
       <li><code>sudo apt-get install ufw</code></li>
       <li><code>sudo ufw enable</code></li>
-      <li><code>sudo ufw status numbered</code></li>
       <li><code>sudo ufw allow &ltservice/port&gt</code></li>
       <li><code>sudo ufw status numbered</code></li>
     </ol>
+
+</br><div><p><b>Allow incoming traffic</b></p></div>
+  <ol start="5">
+    <li>Go to <code>VirtualBox</code></li>
+    <li>Select chosen VM</li>
+    <li>
+      Go to <code>Settings</code> > <code>Network</code> > <code>Adapter 1</code> > <code>Advanced</code> > <code>Port Forwarding</code> > <code>+</code>
+      <ul>
+        <li>Name: <code>SSH</code></li>
+        <li>Protocol: <code>TCP</code></li>
+        <li>Host Port: <code>4242</code></li>
+        <li>Guest Port: <code>4242</code></li>
+      </ul>
+    </li>
+  </ol>
 </details>
     
 <details>
-  <summary><h3>3.11. SSH · connection to a physical machine</h3></summary>
-</br><div><p><b>VirtualBox interface</b></p></div>
-<ol>
-  <li>Go to <code>VirtualBox</code></li>
-  <li>Select chosen VM</li>
-  <li>Go to <code>Settings</code> > <code>Network</code></li>
-  <li>Attached to <code>Bridged Adapter</code></li>
-</ol>
-  
-</br>
-  
+  <summary><h3>3.11. SSH · connection to a physical machine</h3></summary>  
 <div><p><b>VM</b></p></div>
 <ol start="5">
   <li>Start VM</li>
