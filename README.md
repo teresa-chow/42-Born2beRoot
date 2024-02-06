@@ -924,7 +924,7 @@ ___
 </br>
 
 <details>
-  <summary><h2>References & further reading</h2></summary>
+  <summary><h3>References & further reading</h3></summary>
   <ul>
     <li>Linux man pages</li>
     <li><a href="https://www.debian.org/">debian website</a> accessed 23 Jan. 2024</li>
