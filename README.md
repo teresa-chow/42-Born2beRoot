@@ -787,7 +787,7 @@ ___
 <hr></br>
 </details>
 
-<details open>
+<details>
   <summary><h2>5. WordPress · website setup</h2></summary>
   <details>
     <summary><h3>5.1. Lighttpd · installation and setup</h3></summary>
@@ -868,7 +868,7 @@ ___
     </ol>
   </details>
 
-  <details open>
+  <details>
     <summary><h3>5.4. WordPress · download and configuration</h3></summary>
     <blockquote><i>WordPress is an open-source content management system</i></blockquote>
     <ol>
@@ -895,7 +895,7 @@ ___
     </ol>
   </details>
 
-  <details open>
+  <details>
     <summary><h3>5.5. Lighttpd · configuration</h3></summary>
     <ol>
       <li><code>sudo lighty-enable-mod fastcgi</code></li>
@@ -904,7 +904,7 @@ ___
     </ol>
   </details>
 
-  <details open>
+  <details>
     <summary><h3>5.6. WordPress · installation</h3></summary>
     <ol>
       <li>Open a browser window</li>
@@ -912,49 +912,35 @@ ___
       <li>Name the site</li>
       <li>Add a <code>&ltpassword&gt</code> and <code>&ltemail address&gt</code></li>
       <li>Click on <code>Install Wordpress</code></li>
+      <li>Login and configure WordPress</li>
     </ol>
   </details>
 </details>
 
-<details open>
-  <summary><h2>6. File Transfer Protocol (FTP)</h2></summary>
-  <blockquote><i>FTP is a standard communication protocol used for the transfer of computer files from a server to a client on a computer network</i></blockquote>
-<ol>
-  <li><code>sudo apt install vsftpd</code></li>
-  <li><code>dpkg -l | grep vsftpd</code></li>
-  <li><code>sudo ufw allow 21</code>
-        <ul>
-          <li><code>Port 21</code> is the Transmission Control Protocol (TCP) port number value conventionally assigned to FTP control (command)</li>
-          <li><code>Port 20</code> is assigned to FTP data transfer</li>
-        </ul>
-  </li>
-  <li><code>sudo vim /etc/vsftpd.conf</code></li>
-</ol>
 </br>
 
 ___
 
 </br>
 
-## References
+<details>
+  <summary><h2>References & further reading</h2></summary>
+  <ul>
+    <li>Linux man pages</li>
+    <li><a href="https://www.debian.org/">debian website</a> accessed 23 Jan. 2024</li>
+    <li><a href="https://rockylinux.org/">Rocky Linux website</a> accessed 23 Jan. 2024</li>
+    <li><a href="sudo.ws">sudo</a> accessed 25 Jan. 2024</li>
+  </ul>
+  
+  </br><div><p><b>Born2beRoot Guides</b></p></div>
+  <ul>
+    <li>mota494's <a href="https://github.com/mota494/42_Born2BeRoot">Born2beRoot</a> (Mandatory) accessed 25 Jan. 2024</li>
+    <li>PedroZappa's <a href="https://github.com/PedroZappa/Born2BeRoot">Born2beRoot</a> (Mandatory + Bonus: <i>UnrealIRCd + Weechat</i>) accessed 25 Jan. 2024</li>
+    <li>rphlr's <a href="https://github.com/rphlr/42-born2beroot/">Born2beRoot</a> (Mandatory + Bonus: <i>FTP + Fail2ban</i>) accessed 25 Jan. 2024</li>
+  </ul>
 
-Linux man pages
-
-[debian website](https://www.debian.org/) accessed 23 Jan. 2024
-
-[Rocky Linux website](https://rockylinux.org/) accessed 23 Jan. 2024
-
-[@PedroZappa](https://github.com/PedroZappa)'s [Born2beRoot](https://github.com/PedroZappa/Born2beRoot) accessed 25 Jan. 2024
-
-[@mota494](https://github.com/mota494)'s [Born2beRoot](https://github.com/mota494/42_Born2BeRoot) accessed 25 Jan. 2024
-
-[@rphlr](https://github.com/rphlr)'s [42-born2beroot](https://github.com/rphlr/42-born2beroot/) accessed 25 Jan. 2024
-
-[sudo](sudo.ws) accessed 25 Jan. 2024
-
-</br>
-
-___
+</br><hr>
+</details>
 
 </br>
 
