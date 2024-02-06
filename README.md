@@ -909,7 +909,7 @@ ___
     <ol>
       <li>Open a browser window</li>
       <li>Enter localhost or <code>127.0.0.1</code> on the URL bar</li>
-      <li><code>&ltname&gt</code> the site</li>
+      <li>Name the site</li>
       <li>Add a <code>&ltpassword&gt</code> and <code>&ltemail address&gt</code></li>
       <li>Click on <code>Install Wordpress</code></li>
     </ol>
