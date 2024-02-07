@@ -26,7 +26,7 @@ ___
     <td>:x: Unintended server sprawl</td>
   </tr>
   <tr>
-    <td>:heavy_check_mark: <b>Lowered downtime:</b> ifackup and redundancy mechanisms are in place, since VMs are portable and easy to move from one hypervisor to another on a different machine</td>
+    <td>:heavy_check_mark: <b>Lowered downtime:</b> if backup and redundancy mechanisms are in place, since VMs are portable and easy to move from one hypervisor to another on a different machine</td>
     <td>:x: <b>Single point of failure:</b>  unless backup and redundancy mechanisms are in place, if the host computer fails, all VMs running on that machine will also fail</td>
   </tr>
   <tr>
@@ -34,7 +34,7 @@ ___
     <td>:x: Hardware limitations</td>
   </tr>
   <tr>
-    <td>:heavy_check_mark: <b>Securityenefits:</b> ability to run apps of questionable security, study computer viruses, while protecting host OS</td>
+    <td>:heavy_check_mark: <b>Security benefits:</b> ability to run apps of questionable security, study computer viruses, while protecting host OS</td>
     <td>:x: <b>Security risks:</b> if VMs are not properly isolated from each other or/and from the host machine, virtualization can introduce additional security risks</td>
   </tr>
     <tr>
