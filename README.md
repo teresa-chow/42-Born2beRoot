@@ -1,5 +1,5 @@
 # Born2beRoot
-![42 School: Rank 1](https://img.shields.io/badge/42%20School-Rank%201-%2315bbbb)
+[![42 School: Rank 1](https://img.shields.io/badge/42%20School-Rank%201-%2315bbbb)](https://www.42network.org/)
 
 _Born2beRoot is a System Administration exercise from 42 School core curriculum. The task at hand is to create a machine using VirtualBox, complying with strict rules._
 ___
